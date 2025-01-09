@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aneka Jaringan Indonesia</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover; /* Memastikan video menutupi seluruh area */
+            z-index: -1; /* Membuat video berada di belakang konten */
+        }
+
+              /* Wrapper untuk Header + Hero */
+        .header-hero-wrapper {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+            url("background.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        /* Header */
+        .header {
+          display: flex; /* Menggunakan Flexbox */
+          align-items: center; /* Menyelaraskan item secara vertikal */
+        }
+
+        .logo {
+          margin-right: 5px; /* Jarak antara logo dan teks */
+          width: 87px; /* Atur lebar logo sesuai kebutuhan */
+          height: auto; /* Mempertahankan rasio aspek */
+        }
+
+        .vertical-text {
+          display: flex; /* Menggunakan Flexbox untuk menampilkan teks secara vertikal */
+          flex-direction: column; /* Mengatur arah flex menjadi kolom */
+          height: 50px; /* Tinggi container teks disesuaikan dengan tinggi logo */
+          justify-content: center; /* Menyelaraskan teks di tengah */
+        }
+
+        .vertical-text span {
+          line-height: 0.99; /* Mengatur jarak antar baris teks */
+          margin: 0; /* Menghilangkan margin default */
+        }
+
+        .text-white {
+          color: white; /* Warna teks */
+          font-size: 17px;
+        }
+
+        .description {
+          margin-left: 0; /* Menghapus margin kiri untuk memepetkan tulisan */
+          padding-left: 0px; /* Menambahkan sedikit padding jika diperlukan */
+        }
+
+        /* Hero Section */
+        .hero {
+          height: 50vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: white;
+          position: relative;
+        }
+
+        /* Pseudo-element untuk warna solid di bawah */
+        .hero::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          background-color: #133b5c; /* Warna solid */
+          z-index: -1;
+        }
+
+        .about {
+          height: 30vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: white;
+          position: relative;
+        }
+
+        /* Nav links */
+        .nav-link {
+          margin: 0 10px;
+          font-size: 18px;
+        }
+
+        .carousel-inner img {
+            height: 400px; /* Atur tinggi gambar sesuai kebutuhan */
+            object-fit: cover; /* Pastikan gambar memenuhi area tanpa merusak rasio */
+        }
+
+        /* Hero Section the definiton. etc */
+        .about-hero-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about h1 {
+            font-size: 55px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Section for Icons and Text */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 55px 0;
+        }
+
+        .service-item {
+            flex: 1;
+            max-width: 250px;
+            text-align: center;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            position: relative; /* Agar tombol di dalamnya bisa diatur posisinya */
+        }
+
+
+        /* Warna dan gaya saat di-hover */
+        .service-item:hover {
+            background-color: #002B7F;
+            color: white;
+            transform: scale(1.25); /* Efek zoom */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan saat zoom */
+        }
+
+        /* Tombol hanya muncul saat hover */
+        .service-item button {
+            position: absolute;
+            top: 88%; /* Geser sedikit di bawah teks */
+            left: 50%;
+            transform: translateX(-50%);
+            display: none; /* Sembunyikan tombol secara default */
+            transition: opacity 0.3s; /* Smooth muncul/hilang */
+        }
+
+        /* Tampilkan tombol saat item di-hover */
+        .service-item:hover button {
+            display: block;
+            opacity: 1; /* Muncul secara halus */
+        }
+
+
+        .service-item.active {
+            background-color: #002B7F;
+            color: white;
+        }
+
+        .service-item img {
+            width: 100px;
+            margin-bottom: 1px;
+        }
+
+        .service-item h5 {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .definition {
+            margin-top: 40px;
+        }
+
+        /* side bar - penjelasan*/
+        /* Sidebar lingkaran */
+        .sidebar {
+            position: sticky;
+            top: 30px; /* Jarak dari atas viewport */
+            left: 0; /* Posisi di kiri layar */
+            width: 100px; /* Atur lebar sesuai kebutuhan */
+            margin-left: 40px; /* Jarak dari sisi kiri layar */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Menyelaraskan item ke kiri */
+            gap: 15px; /* Jarak antar lingkaran */
+            margin-top: 30px;
+        }
+
+        .circle-menu {
+            width: 80px;
+            height: 80px;
+            background-color: #004080;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* Hover efek zoom */
+        .circle-menu:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Section untuk keterangan */
+        .content {
+            margin-left: 120px; /* Agar tidak bertumpuk dengan sidebar */
+            padding: 50px;
+            margin-top: -420px;
+        }
+
+        .definition-content {
+            display: flex; /* Use Flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space items evenly */
+            margin: 20px 0; /* Margin for top and bottom spacing */
+        }
+
+        .definition-text {
+            flex: 1; /* Allow text to take available space */
+            margin-right: 20px; /* Space between text and image */
+        }
+
+        .definition-image {
+            max-width: 400px; /* Set a maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .work-method-content {
+            display: flex; /* Use Flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space items evenly */
+            margin: 10px 0; /* Margin for top and bottom spacing */
+        }
+
+        .work-method-text {
+            flex: 1; /* Allow text to take available space */
+            margin-right: 200px; /* Space between text and image */
+
+        }
+
+        .work-method-image {
+            max-width: 200px; /* Set a maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .work-method2-content {
+            display: flex; /* Use Flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space items evenly */
+            margin: 1px 0; /* Margin for top and bottom spacing */
+            margin-left: 60px;
+            margin-top: -50px;
+        }
+
+        .work-method2-text {
+            flex: 1; /* Allow text to take available space */
+            margin-right: 20px; /* Space between text and image */
+        }
+
+        .work-method2-image {
+            max-width: 200px; /* Set a maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 90px;
+        }
+
+        #advantages {
+            text-align: left;
+            margin: 40px 0;
+        }
+
+        #advantages h2 {
+            font-size: 24px;
+            font-weight: normal;
+            font-weight: bold;
+        }
+
+        #advantages h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .advantage-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: left;
+        }
+
+        .advantage-item {
+            display: flex;
+            width: 47%; /* Adjust width for two columns */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .advantage-number {
+            background-color: #1E208D; /* Set background color */
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            width: 80px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-sizing: border-box;
+        }
+
+        .advantage-text h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .advantage-text p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        #application {
+            margin: 50px 0;
+        }
+
+        #application h2 {
+            font-weight: bold;
+            font-size: 24px;
+            color: #333;
+        }
+
+        #application h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .application-cards {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f7f7f7;
+            width: 250px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        .bg-navy {
+          background-color: #001f3f; /* Warna navy */
+        }
+
+
+        /* Section dalam konten */
+        section {
+            margin-bottom: 100px; /* Jarak antar section */
+        }
+
+
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column; /* Ubah arah flex ke vertikal */
+                padding: 20px;
+                margin-top: -190px;
+            }
+
+            .service-item {
+                max-width: 100%; /* Item memenuhi lebar layar */
+                margin-bottom: 15px; /* Jarak antar item */
+                width: 200px;
+            }
+
+            .service-item h5 {
+                font-size: 24px; /* Atur ukuran font agar lebih besar */
+            }
+
+            .service-item button {
+                top: 20%; /* Sesuaikan posisi tombol pada layar kecil */
+                left: 80%;
+            }
+
+            .service-item:hover button {
+                display: block;
+                opacity: 0; /* Muncul secara halus */
+
+            }
+
+            .service-item img {
+                width: 60px; /* Perbesar ikon agar lebih jelas */
+                margin-bottom: 10px;
+            }
+
+             .sidebar {
+                 display: none;
+            }
+
+            .content {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .definition-content {
+                flex-direction: column; /* Stack items vertically on small screens */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .definition-text {
+                margin-right: 0; /* Remove right margin on small screens */
+                margin-bottom: 20px; /* Add space below text */
+            }
+
+            .definition-image {
+                max-width: 100%; /* Allow the image to take full width */
+            }
+
+            .work-method-content {
+                flex-direction: column; /* Stack vertically on smaller screens */
+                align-items: flex-start;
+            }
+
+            .work-method-text {
+                flex: 1; /* Allow text to take available space */
+                margin-right: 0px; /* Space between text and image */
+
+            }
+
+            .work-method-image {
+                margin-right: 0; /* Remove right margin on small screens */
+                margin-bottom: 20px; /* Space between image and text */
+                max-width: 100%; /* Image takes full width on small screens */
+            }
+
+            .work-method2-content {
+                flex-direction: column; /* Stack vertically on smaller screens */
+                align-items: flex-start;
+            }
+
+            .work-method2-text {
+                flex: 1; /* Allow text to take available space */
+                margin-right: 0px; /* Space between text and image */
+                margin-top: 30px;
+                left: 100px;
+                margin-left: -60px;
+
+            }
+
+
+            .work-method2-image {
+                margin-right: 0; /* Remove right margin on small screens */
+                margin-bottom: 20px; /* Space between image and text */
+                max-width: 100%; /* Image takes full width on small screens */
+            }
+
+             .advantage-list {
+                flex-direction: column;
+            }
+            .advantage-item {
+                width: 100%; /* Full width on smaller screens */
+            }
+
+            .application-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 90%;
+            }
+
+
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+     <!-- Video Background -->
+    <video class="video-background" autoplay muted loop>
+        <source src="bor.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video HTML5.
+    </video>
+    <!-- Header -->
+    <div class="header-hero-wrapper">
+        <header class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header">
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <div class="vertical-text text-white">
+                        <span>ANEKA</span>
+                        <span>JARINGAN</span>
+                        <span>INDONESIA</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link active" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="signature-project.html">Signature Project</a></li>
+                            <li><a class="dropdown-item" href="ongoing-project.html">Ongoing Project</a></li>
+                            <li><a class="dropdown-item" href="finished-project.html">Finished Project</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="about-hero-wrapper">
+        <section class="about text-center text-white">
+            <div class="container">
+                <h1>BORED PILE</h1>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <div class="service-item" class="service-link">
+            <a href="#definition" style="text-decoration: none;">
+                <img src="definition.png" alt="Definition Icon"> 
+                <h5 style="color: black;">The Definition</h5>
+                <button class="btn btn-light mt-2">▶</button>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="#work-method" style="text-decoration: none;">
+                <img src="workmethod.png" alt="Work Method Icon">
+                <h5 style="color: black;">Work Method</h5>
+                <button class="btn btn-light mt-2">▶</button>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="#advantages" style="text-decoration: none;">
+                <img src="advantages.png" alt="Advantages Icon">
+                <h5 style="color: black;">The Advantages</h5>
+                <button class="btn btn-light mt-2">▶</button>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="#application" style="text-decoration: none;">
+                <img src="application.png" alt="Application Icon">
+                <h5 style="color: black;">Application</h5>
+                <button class="btn btn-light mt-2">▶</button> 
+            </a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="circle-menu" onclick="scrollToSection('definition')">Definition</div>
+        <div class="circle-menu" onclick="scrollToSection('work-method')">Work Method</div>
+        <div class="circle-menu" onclick="scrollToSection('advantages')">Advantages</div>
+        <div class="circle-menu" onclick="scrollToSection('application')">Application</div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <section id="definition">
+            <div class="definition-content">
+                <div class="definition-text">
+                    <h2 style="font-weight: bold;">THE DEFINITION OF</h2>
+                    <h2 style="font-weight: bold;">BORED PILE</h2>
+                    <p>A bored pile is a type of deep foundation created by drilling into the ground to form a hole, which is then filled with concrete. Bored piles are used to support the loads of buildings and are often employed in construction in areas with unstable soil or where foundation depth needs to reach stronger soil layers.</p>
+                </div>
+                <img src="bordefinition.jpg" alt="Bored Pile" class="definition-image">
+            </div>
+        </section>
+
+
+        <section id="work-method">
+            <h2 style="font-weight: bold;">WORK METHOD</h2>
+            <div class="work-method-content">
+                <img src="application.png" alt="Work Method" class="work-method-image">
+                <div class="work-method-text">
+                    <p style="font-size: 18px;font-weight: bold">1. Area Clearance and Drilling Rig Setup</p>
+                        <p style="margin-left: 20px; margin-top: -20px;">Prepare the working platform by clearing the area, fixing pegs for the borehole position, and setting the drilling rig in the designated position for the bored pile.</p>
+                </div>
+            </div>
+            <div class="work-method2-content">
+                <div class="work-method2-text">
+                    <p style="font-size: 18px;font-weight: bold">2. Pre-Boring</p>
+                    <p style="margin-left: 20px; margin-top: -20px;">Conduct the pre-boring using a soil auger to establish the initial borehole.</p>
+                </div>
+                <img src="workmethod.png" alt="Bored Pile" class="work-method2-image">
+            </div>
+        </section>
+
+
+        <section id="advantages">
+            <h1>THE ADVANTAGES OF BORED PILE</h1>
+            <div class="advantage-list">
+                <div class="advantage-item">
+                    <div class="advantage-number">1</div>
+                    <div class="advantage-text">
+                        <h3>Improved Stability</h3>
+                        <p>Casing prevents borehole collapse in soft or water-logged soils, which improves drilling safety.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">2</div>
+                    <div class="advantage-text">
+                        <h3>Soil Sampling Capability</h3>
+                        <p>Allows engineers to gather valuable information about soil conditions, which is crucial for foundation design.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">3</div>
+                    <div class="advantage-text">
+                        <h3>Minimized Risk of Damage</h3>
+                        <p>Minimizes potential harm to nearby environments and existing structures, lowering associated risks.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">4</div>
+                    <div class="advantage-text">
+                        <h3>Versatility</h3>
+                        <p>Suitable for a wide range of projects, from high-rise buildings to large infrastructure like bridges and tunnels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="application">
+            <h1>APPLICATION BORED PILE</h1>
+            <div class="application-cards">
+                <div class="card">
+                    <img src="high-rise.jpg" alt="High-Rise Building Construction">
+                    <h4>High-Rise Building Construction</h4>
+                    <p>Ensures stability and strength of foundations for large structures.</p>
+                </div>
+                <div class="card">
+                    <img src="transportation.jpg" alt="Transportation Infrastructure">
+                    <h4>Transportation Infrastructure</h4>
+                    <p>Used in the construction of bridges, highways, and railways, particularly in challenging soil conditions.</p>
+                </div>
+                <div class="card">
+                    <img src="waterfront.jpg" alt="Waterfront Development Projects">
+                    <h4>Waterfront Development Projects</h4>
+                    <p>Highly useful in projects near or under water, where soil stability is often a concern.</p>
+                </div>
+                <div class="card">
+                    <img src="restoration.jpg" alt="Restoration and Strengthening of Existing Structures">
+                    <h4>Restoration and Strengthening of Existing Structures</h4>
+                    <p>Can be used to reinforce the foundations of existing buildings that are experiencing damage or settlement.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Fungsi untuk scroll ke section tertentu
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+     <footer class="bg-navy text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Bagian About -->
+            <div class="col-md-4">
+                <h5>PT. Aneka Jaringan Indonesia</h5>
+                <p>
+                    Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
+                </p>
+            </div>
+
+            <!-- Bagian Navigasi -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>(021) 21057940</li>
+                    <li>marketing@ptaji.co.id</li>
+                </ul>
+            </div>
+
+            <!-- Bagian Media Sosial -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 24px;"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 24px;"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter" style="font-size: 24px;"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin" style="font-size: 24px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="bg-white" />
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p>&copy; 2024 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Link ke Bootstrap Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</body>
+
+</html>

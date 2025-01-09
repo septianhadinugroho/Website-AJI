@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aneka Jaringan Indonesia</title>
+
+    <!-- Icon Web -->
+    <link rel="shortcut icon" href="assets/logo-ico.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/news.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header-hero-wrapper">
+        <header class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Logo" class="logo">
+                    </a>
+                    <div class="vertical-text">
+                        <span>ANEKA</span>
+                        <span>JARINGAN</span>
+                        <span>INDONESIA</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="signature-project.html">Signature Project</a></li>
+                            <li><a class="dropdown-item" href="ongoing-project.html">Ongoing Project</a></li>
+                            <li><a class="dropdown-item" href="finished-project.html">Finished Project</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item"><a href="news.html" class="nav-link active" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- About Hero Section -->
+    <div class="about-hero-wrapper">
+        <section class="about text-center">
+            <div class="container">
+                <h1 style="font-size:55px; font-weight: bold; font-family: Arial, Helvetica; margin-top: 250px;">NEWS</h1>
+                <h2 style="font-size:25px; font-weight: bold; font-family: Arial, Helvetica;">UPDATE</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-container">
+        <!-- News Item 1 -->
+        <div class="news-item">
+            <img src="assets/image1.jpg" alt="News Image 1">
+            <div class="news-content">
+                <div class="news-date">Tuesday, October 15, 2024</div>
+                <div class="news-title">Latest Project: Harbour Road II Toll Road</div>
+                <div class="news-description">
+                    The Harbour Road II Toll Road project, led by PT. Wijaya Karya (Persero), Tbk near the Jakarta International Stadium, aims to improve connectivity and support regional growth. PT. Aneka Jaringan Indonesia is committed to enhancing infrastructure in Jakarta. For more information, contact their marketing department.
+                </div>
+                <a href="#" class="read-more-btn" onclick="openModal('modal1')">READ MORE</a>
+            </div>
+        </div>
+
+        <!-- News Item 2 -->
+        <div class="news-item">
+            <img src="assets/image2.jpg" alt="News Image 2">
+            <div class="news-content">
+                <div class="news-date">Thursday, September 19, 2024</div>
+                <div class="news-title">Inauguration of the New Pool at PT. Aneka Jaringan Indonesia</div>
+                <div class="news-description">
+                    PT. Aneka Jaringan Indonesia inaugurated a new pool at its head office on September 19, 2024, to improve storage and efficiency. The event featured a traditional cone-cutting by directors. For more information, contact the marketing department.
+                </div>
+                <a href="#" class="read-more-btn" onclick="openModal('modal2')">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Latest Project: Harbour Road II Toll Road</h2>
+            <p>
+                The Harbour Road II Toll Road project has officially begun, with PT. Wijaya Karya (Persero), Tbk as the main contractor. This project is strategically located near Jakarta International Stadium and adjacent to other ongoing projects by PT. Aneka Jaringan Indonesia.
+                The Harbour Road II Toll Road is expected to enhance connectivity in the surrounding area, provide better access for the community, and support regional economic growth.
+                With the progress of this project, PT. Aneka Jaringan Indonesia is also committed to supporting infrastructure development around Jakarta and actively participating in projects that can improve the quality of life for the community.
+            </p>
+            <p>
+                For more information about this project, please contact: Marketing PT. Aneka Jaringan Indonesia<br>
+                Email: marketing@ptaji.co.id<br>
+                Phone: (021) 21057940
+            </p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Inauguration of the New Pool at PT. Aneka Jaringan Indonesia</h2>
+            <p>
+                PT. Aneka Jaringan Indonesia proudly announces the inauguration of its new pool located at the company’s head office complex. The inauguration event, held on September 19, 2024, was attended by the management team and employees.
+                The purpose of the new pool is to enhance the storage capacity for construction equipment and materials, as well as to support the operational efficiency of the company.
+                The inauguration ceremony was marked by the traditional cutting of the cone (tumpeng) by Mr. Tung Sin Thian and Mr. Ngoi Tong King, directors of PT. Aneka Jaringan Indonesia. The atmosphere was filled with enthusiasm among the attendees, reflecting the great hopes for improved company performance.
+                PT. Aneka Jaringan Indonesia remains committed to enhancing the quality of its services and operations. This new pool represents a strategic step toward achieving the company’s vision as a leader in the construction industry.
+            </p>
+            <p>
+                For more information about this project, please contact: Marketing PT. Aneka Jaringan Indonesia<br>
+                Email: marketing@ptaji.co.id<br>
+                Phone: (021) 21057940
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>PT. Aneka Jaringan Indonesia</h5>
+                    <p>
+                        Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
+                    </p>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li>(021) 21057940</li>
+                        <li><a href="mailto:marketing@ptaji.co.id">marketing@ptaji.co.id</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons d-flex">
+                        <a href="https://www.facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/anekajaringanindonesia" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.x.com" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p>&copy; 2024 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/news.js"></script>
+</body>
+
+</html>

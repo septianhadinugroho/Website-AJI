@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aneka Jaringan Indonesia</title>
+
+    <!-- Icon Web -->
+    <link rel="shortcut icon" href="assets/logo-ico.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="css/styles-home.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header dan Hero di dalam satu kontainer -->
+    <div class="header-hero-wrapper">
+        <header class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Logo" class="logo">
+                    </a>
+                    <div class="vertical-text">
+                        <span>ANEKA</span>
+                        <span>JARINGAN</span>
+                        <span>INDONESIA</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item "><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="signature-project.html">Signature Project</a></li>
+                            <li><a class="dropdown-item" href="ongoing-project.html">Ongoing Project</a></li>
+                            <li><a class="dropdown-item" href="finished-project.html">Finished Project</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section with Image Slider Background -->
+        <section class="hero text-center">
+            <!-- Image Slider Background -->
+            <div class="sliderhome">
+                <div class="slideshome">
+                    <div class="slidehome"><img src="assets/aji1.png" alt="Slide 1"></div>
+                    <div class="slidehome"><img src="assets/aji2.png" alt="Slide 2"></div>
+                    <div class="slidehome"><img src="assets/aji3.png" alt="Slide 3"></div>
+                    <div class="slidehome"><img src="assets/aji4.png" alt="Slide 4"></div>
+                    <div class="slidehome"><img src="assets/aji5.png" alt="Slide 5"></div>
+                </div>
+            </div>
+
+            <!-- Overlay untuk mengurangi transparansi gambar -->
+            <div class="overlay"></div>
+
+            <!-- Konten Teks -->
+            <div class="container">
+                <h2 id="welcome-text" style="font-size:25px;"></h2>
+                <h1 id="company-name" style="font-size:50px; font-weight: 700;"></h1>
+                <p id="tagline" style="font-size:30px;"></p>
+              
+                <!-- Tombol untuk melanjutkan ke bawah -->
+                <a href="#services" class="btn-scroll-down">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section-service">
+        <div class="text-content-service">
+            <h1>OUR SERVICES</h1>
+            <p>We are committed to providing high-quality services tailored to meet the diverse needs of our clients. Our expertise spans various areas, ensuring that we deliver effective solutions for every project.</p>
+        </div>
+
+        <div class="carousel-container-service">
+            <div class="carousel-service">
+                <div class="card-service">
+                    <img src="assets/borepilecarousel.jpg" alt="Bored Pile" style="height: 200px">
+                    <h2>Bored Pile</h2>
+                    <p>Bored piles are a type of deep foundation commonly used in construction to provide...</p>
+                    <a href="boredpile.html"><button>Read More</button></a>
+                </div>
+
+                <div class="card-service active">
+                    <img src="assets/page12.jpg" alt="Soldier Pile" style="height: 200px">
+                    <h2>Soldier Pile</h2>
+                    <p>Soldier piles are a type of retaining wall system used in construction to provide lateral support...</p>
+                    <a href="soldierPile.html"><button>Read More</button></a>
+                </div>
+
+                <div class="card-service active">
+                    <img src="assets/page12.jpg" alt="Soldier Pile" style="height: 200px">
+                    <h2>Secant Pile</h2>
+                    <p>Secant piles are overlapping concrete piles, providing stability, soil retention, and groundwater control...</p>
+                    <a href="soldierPile.html"><button>Read More</button></a>
+                </div>
+
+                <div class="card-service">
+                    <img src="assets/wall.jpg" alt="Diaphragm Wall" style="height: 200px">
+                    <h2>Diaphragm Wall</h2>
+                    <p>Diaphragm wall is a type of retaining wall and excavation system used in construction...</p>
+                    <button>Read More</button>
+                </div>
+
+                <div class="card-service">
+                    <img src="assets/wall.jpg" alt="Diaphragm Wall" style="height: 200px">
+                    <h2>Auging for Geothermal</h2>
+                    <p>Involves drilling boreholes for geothermal energy systems....</p>
+                    <button>Read More</button>
+                </div>
+
+                <div class="card-service">
+                    <img src="assets/wall.jpg" alt="Diaphragm Wall" style="height: 200px">
+                    <h2>Pull Out Temporary Casing</h2>
+                    <p>Remove casing, wait, fill borehole, and weld a cover plate....</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <button class="nav-service prev-service">&#8249;</button>
+            <button class="nav-service next-service">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <div>
+        <h1 class="chooseUsH1">WHY CHOOSE US</h1>
+        <div class="application-cards">
+            <div class="card">
+                <img src="assets/centang.png" alt="Proven Track Records">
+                <h4>PROVEN TRACK RECORDS</h4>
+                <p>Our portfolio includes a diverse array of successfully completed projects across various sectors.</p>
+            </div>
+            <div class="card">
+                <img src="assets/expert.png" alt="Specialized Expertise">
+                <h4>SPECIALIZED EXPERTISE</h4>
+                <p>With years of dedicated experience in foundation construction, our team understands the unique challenges of different soil conditions and structural requirements.</p>
+            </div>
+            <div class="card">
+                <img src="assets/time.png" alt="Proven Reliability and Timeliness">
+                <h4>PROVEN RELIABILITY AND TIMELINESS</h4>
+                <p>We pride ourselves on our track record of delivering projects on schedule.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div>
+        <h1 class="quote">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">120</span>
+                    <span class="stat-label">FINISHED <br> PROJECTS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">TEAM <br> PROJECTS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">125</span>
+                    <span class="stat-label">CONTRACT <br> AWARD</span>
+                </div>
+            </div>
+        </h1>
+    </div>
+
+    <!-- Our Clients Section -->
+    <div>
+        <h1 class="chooseUsH1">OUR CLIENTS</h1>
+    </div>
+
+    <div class="sliderClient">
+        <div class="slideClient-track">
+            <!-- Slide Asli -->
+            <div class="slideClient"><img class="imgClient" src="assets/client1.png" alt="Client 1" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client2.jpg" alt="Client 2" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client3.png" alt="Client 3" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client4.png" alt="Client 4" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client5.jpg" alt="Client 5" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client6.jpeg" alt="Client 6" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client7.png" alt="Client 7" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client8.jpg" alt="Client 8" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client9.jpg" alt="Client 9" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client10.jpg" alt="Client 10" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client11.jpg" alt="Client 11" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client12.jpg" alt="Client 12" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client13.png" alt="Client 13" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client14.png" alt="Client 14" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client15.png" alt="Client 15" /></div>
+            
+            <!-- Duplikasi Slide -->
+            <div class="slideClient"><img class="imgClient" src="assets/client1.png" alt="Client 1" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client2.jpg" alt="Client 2" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client3.png" alt="Client 3" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client4.png" alt="Client 4" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client5.jpg" alt="Client 5" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client6.jpeg" alt="Client 6" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client7.png" alt="Client 7" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client8.jpg" alt="Client 8" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client9.jpg" alt="Client 9" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client10.jpg" alt="Client 10" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client11.jpg" alt="Client 11" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client12.jpg" alt="Client 12" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client13.png" alt="Client 13" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client14.png" alt="Client 14" /></div>
+            <div class="slideClient"><img class="imgClient" src="assets/client15.png" alt="Client 15" /></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>PT. Aneka Jaringan Indonesia</h5>
+                    <p>
+                        Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
+                    </p>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li>(021) 21057940</li>
+                        <li><a href="mailto:marketing@ptaji.co.id">marketing@ptaji.co.id</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons d-flex">
+                        <a href="https://www.facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/anekajaringanindonesia" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.x.com" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p>&copy; 2024 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlidehome = 0;
+        const slideshome = document.querySelectorAll('.slidehome');
+        const totalSlideshome = slideshome.length;
+        
+        function showSlidehome(index) {
+            slideshome.forEach((slidehome, i) => {
+                slidehome.style.display = i === index ? 'block' : 'none'; // Tampilkan hanya gambar yang aktif
+            });
+        }
+        
+        function nextSlidehome() {
+            currentSlidehome = (currentSlidehome + 1) % totalSlideshome;
+            showSlidehome(currentSlidehome);
+        }
+        
+        // Ganti gambar setiap 3 detik
+        setInterval(nextSlidehome, 3000);
+        
+        // Inisialisasi sliderhome
+        showSlidehome(currentSlidehome);
+
+        document.querySelector('.btn-scroll-down').addEventListener('click', function (e) {
+            e.preventDefault(); // Mencegah perilaku default link
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth' // Animasi scroll smooth
+            });
+        });
+
+          // Fungsi untuk menambahkan class saat di-scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 700) { // Ubah 50 sesuai kebutuhan (jarak scroll)
+            navbar.classList.add('scrolled');
+            } else {
+            navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fungsi untuk membuat efek mengetik
+        function typeText(element, text, speed, delay = 0) {
+            setTimeout(() => {
+            let i = 0;
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                } else {
+                clearInterval(interval);
+                element.classList.remove("typing-effect"); // Hapus cursor setelah selesai
+                }
+            }, speed);
+            }, delay);
+        }
+        
+        // Jalankan animasi untuk setiap teks
+        const welcomeText = document.getElementById("welcome-text");
+        const companyName = document.getElementById("company-name");
+        const tagline = document.getElementById("tagline");
+        
+        // Tambahkan class typing-effect untuk cursor
+        welcomeText.classList.add("typing-effect");
+        companyName.classList.add("typing-effect");
+        tagline.classList.add("typing-effect");
+        
+        // Mulai animasi
+        typeText(welcomeText, "WELCOME TO", 100); // Teks pertama
+        typeText(companyName, "ANEKA JARINGAN INDONESIA", 100, 1200); // Teks kedua, delay 1.2 detik
+        typeText(tagline, "We Build Quality and Integrity", 100, 3000); // Teks ketiga, delay 3 detik
+    </script>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

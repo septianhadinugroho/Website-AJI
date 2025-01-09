@@ -1,0 +1,111 @@
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.containercontact {
+    width: 950px;
+    margin: 80px auto;
+    color: white;
+    line-height: 1.5;
+}
+
+.text-centercontact {
+    text-align: center;
+}
+
+.contentcontact {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 40px;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+}
+
+.contact-info {
+    display: inline-block;
+    padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.col-1 {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map-container {
+    margin-top: 20px;
+    border: none;
+    height: 100%;
+}
+
+.col-2 {
+    flex: 1 1 auto;
+    background-color: white;
+}
+
+.form-containercontact {
+    color: #000;
+    padding: 30px;
+}
+
+.contact-info-title {
+    color: black;
+}
+
+.form-row {
+    padding-bottom: 30px;
+}
+
+.form-field {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.send-btn {
+    border: 0px;
+    padding: 12px 26px;
+    background-color: #01bdd4;
+    color: white;
+}
+
+@media all and (max-width: 1024px) {
+    .containercontact {
+        width: auto;
+        padding: 30px;
+    }
+    .col-1 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .contentcontact {
+        display: block;
+    }
+    .col-2 {
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .containercontact {
+        padding: 10px;
+    }
+}

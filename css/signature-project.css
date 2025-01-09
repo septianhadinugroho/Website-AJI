@@ -1,0 +1,159 @@
+.about-hero-wrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                url("/assets/aji2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Tinggi diperbesar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek shadow pada teks */
+  }
+  
+  .about h1 {
+    font-size: 60px; /* Ukuran font diperbesar */
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .about h2 {
+    font-size: 30px; /* Ukuran font diperbesar */
+    font-weight: 700;
+  }
+
+.containerFinished {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+.left-content {
+    position: relative; /* Position relative to position the back button */
+    flex: 2;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+.left-content img {
+    width: 760px;
+    height: 560px;
+    border-radius: 8px;
+    margin-left: 60px;
+}
+/* Back button styling */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    text-decoration: none;
+}
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.project-info {
+    background-color: #1d1f7a; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.project-info h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.project-info p {
+    margin: 8px 0;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.slide img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

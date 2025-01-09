@@ -1,0 +1,58 @@
+/* Ongoing Project Section */
+.container.my-4 h2 {
+    color: navy;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #191369;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .card-content {
+    padding: 20px;
+}
+
+.project-card h5 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card h6 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.project-card .project-description {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 8px 20px; /* Ukuran button diperkecil */
+    font-size: 14px;
+    width: auto; /* Lebar button disesuaikan dengan konten */
+    display: inline-block; /* Agar button tidak memenuhi lebar */
+}

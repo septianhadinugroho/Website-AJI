@@ -1,0 +1,337 @@
+.about-hero-wrapper {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url("/assets/about-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px; /* Tinggi diperbesar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek shadow pada teks */
+}
+
+.about h1 {
+  font-size: 60px; /* Ukuran font diperbesar */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  font-size: 30px; /* Ukuran font diperbesar */
+  font-weight: 700;
+}
+
+/* Introduction Section */
+.introduction-section {
+  margin-top: 2rem; /* Margin atas diperbesar */
+  margin-bottom: 1rem; /* Margin bawah diperbesar */
+  max-width: 1380px;
+}
+
+.square-img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; /* Tinggi gambar diperbesar */
+  object-fit: cover;
+  border-radius: 15px; /* Border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek shadow */
+}
+
+.description h3 {
+  color: #000061;
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Jarak bawah diperbesar */
+  font-size: 28px; /* Ukuran font diperbesar */
+}
+
+.description p {
+  text-align: justify;
+  line-height: 1.8; /* Jarak antar baris diperbesar */
+  margin-bottom: 1.5rem; /* Jarak bawah diperbesar */
+  font-size: 18px; /* Ukuran font diperbesar */
+}
+
+/* Vision and Mission Styling */
+.vision-title,
+.mission-title {
+    color: #000061;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Jarak bawah diperbesar */
+    font-size: 28px; /* Ukuran font diperbesar */
+}
+
+/* Vision and Mission Container */
+.container.my-7 {
+    max-width: 1400px; /* Lebar maksimal container */
+    padding-bottom: 2rem; /* Padding bawah diperbesar */
+}
+
+/* Row untuk memposisikan kolom di tengah */
+.container.my-7 .row {
+  display: flex;
+  justify-content: center; /* Pusatkan kolom */
+  flex-wrap: wrap; /* Pastikan kolom bisa wrap di layar kecil */
+}
+
+/* Mission Column */
+.mission-column {
+    width: 47%; /* Lebar kolom Mission */
+    background: #f9f9f9; /* Warna background card */
+    padding: 2rem;
+    border-radius: 15px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
+    margin: 1rem; /* Jarak antar kolom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Vision Column */
+.vision-column {
+    width: 47%; /* Lebar kolom Vision */
+    background: #f9f9f9; /* Warna background card */
+    padding: 2rem;
+    border-radius: 15px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
+    margin: 1rem; /* Jarak antar kolom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Hover Effect */
+.mission-column:hover,
+.vision-column:hover {
+    transform: translateY(-10px); /* Efek hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek shadow saat hover */
+}
+
+/* Text Styling */
+.mission-column p,
+.vision-column p {
+    text-align: justify;
+    line-height: 1.8; /* Jarak antar baris diperbesar */
+    font-size: 18px; /* Ukuran font diperbesar */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.introduction-section,
+.container.my-7 {
+    animation: fadeIn 1s ease-out; /* Efek fade-in */
+}
+
+/* Quote Section */
+.quote {
+  background-color: navy;
+  color: white;
+  font-size: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.quoteh2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* History Section */
+.history-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-title {
+  color: #000061;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+/* Timeline Container */
+.timeline-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  width: 60%;
+  padding-left: 65px;
+}
+
+/* Garis Timeline */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 60px;
+  width: 6px;
+  background: #000061;
+  left: 100px; /* Sesuaikan posisi garis */
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  padding-left: 60px; /* Jarak desk dari garis */
+  margin-bottom: 40px;
+}
+
+/* Lingkaran Timeline */
+.timeline-circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #000061;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-circle span {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Deskripsi Timeline */
+.timeline-description {
+  margin-left: 50px; /* Jarak desk dari bulatan */
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: justify;
+}
+
+.timeline-description p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.timeline-image {
+  width: 32%; /* Lebar container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 570px; /* Tinggi container */
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; /* Pastikan padding termasuk dalam lebar */
+}
+
+.timeline-image img {
+  width: calc(100% - 80px); /* Sesuaikan lebar gambar dengan mengurangi padding */
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.timeline-image img.visible {
+  opacity: 1;
+}
+
+/* Certificate Section */
+.carousel-item img {
+  width: 100%; /* Mengisi lebar kolom */
+  height: auto; /* Menjaga rasio gambar */
+  max-height: 400px; /* Perbesar ukuran sertifikat */
+  object-fit: contain; /* Memastikan gambar tidak terpotong */
+  cursor: pointer; /* Ubah kursor saat hover */
+  transition: transform 0.3s ease; /* Efek hover */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05); /* Sedikit zoom saat hover */
+}
+
+/* Memastikan row dan col di tengah */
+.carousel-inner .row {
+  display: flex;
+  justify-content: center; /* Tengahkan secara horizontal */
+  align-items: center; /* Tengahkan secara vertikal */
+  gap: 50px; /* Jarak antar sertifikat */
+}
+
+/* Tombol Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  background-color: #000061; /* Warna biru */
+  border-radius: 50%; /* Bentuk bulat */
+  top: 50%; /* Posisi vertikal di tengah */
+  transform: translateY(-50%); /* Geser ke atas setengah tinggi */
+  opacity: 0.6; /* Sedikit transparan */
+  transition: opacity 0.3s ease; /* Efek hover */
+}
+
+.carousel-control-prev {
+  left: 50px; /* Posisi tombol previous lebih ke kiri */
+}
+
+.carousel-control-next {
+  right: 50px; /* Posisi tombol next lebih ke kanan */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1; /* Tidak transparan saat hover */
+}
+
+/* Modal untuk Memperbesar Gambar */
+.modal-content {
+  background: transparent; /* Hilangkan latar belakang modal */
+  border: none; /* Hilangkan border */
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Batasan Area Slide */
+.carousel {
+  padding: 0 150px; /* Beri padding kiri dan kanan agar tidak menutup tombol */
+}
