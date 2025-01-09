@@ -43,6 +43,7 @@
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .project-card .btn {
