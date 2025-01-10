@@ -24,16 +24,25 @@
 }
 
 /* Introduction Section */
+.introduction-heading {
+  color: #000061; /* Warna teks */
+  font-weight: bold; /* Tebal font */
+  font-size: 35px; /* Ukuran font */
+  position: relative; /* Posisi relatif untuk pseudo-element */
+  margin-bottom: 35px; /* Jarak bawah */
+  text-align: left; /* Teks di kiri */
+}
+
 .introduction-section {
-  margin-top: 2rem; /* Margin atas diperbesar */
-  margin-bottom: 1rem; /* Margin bawah diperbesar */
-  max-width: 1380px;
+  margin-top: 40px; /* Margin atas diperbesar */
+  margin-bottom: 40px; /* Margin bawah diperbesar */
+  max-width: 1300px;
 }
 
 .square-img {
   width: 100%;
   height: auto;
-  max-height: 450px; /* Tinggi gambar diperbesar */
+  max-height: 430px; /* Tinggi gambar diperbesar */
   object-fit: cover;
   border-radius: 15px; /* Border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek shadow */
@@ -42,8 +51,6 @@
 .description h3 {
   color: #000061;
   font-weight: bold;
-  margin-bottom: 1.5rem; /* Jarak bawah diperbesar */
-  font-size: 28px; /* Ukuran font diperbesar */
 }
 
 .description p {
@@ -51,100 +58,7 @@
   line-height: 1.8; /* Jarak antar baris diperbesar */
   margin-bottom: 1.5rem; /* Jarak bawah diperbesar */
   font-size: 18px; /* Ukuran font diperbesar */
-}
-
-/* Vision and Mission Styling */
-.vision-title,
-.mission-title {
-    color: #000061;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px; /* Jarak bawah diperbesar */
-    font-size: 28px; /* Ukuran font diperbesar */
-}
-
-/* Vision and Mission Container */
-.container.my-7 {
-    max-width: 1400px; /* Lebar maksimal container */
-    padding-bottom: 2rem; /* Padding bawah diperbesar */
-}
-
-/* Row untuk memposisikan kolom di tengah */
-.container.my-7 .row {
-  display: flex;
-  justify-content: center; /* Pusatkan kolom */
-  flex-wrap: wrap; /* Pastikan kolom bisa wrap di layar kecil */
-}
-
-/* Mission Column */
-.mission-column {
-    width: 47%; /* Lebar kolom Mission */
-    background: #f9f9f9; /* Warna background card */
-    padding: 2rem;
-    border-radius: 15px; /* Border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
-    margin: 1rem; /* Jarak antar kolom */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
-}
-
-/* Vision Column */
-.vision-column {
-    width: 47%; /* Lebar kolom Vision */
-    background: #f9f9f9; /* Warna background card */
-    padding: 2rem;
-    border-radius: 15px; /* Border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
-    margin: 1rem; /* Jarak antar kolom */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
-}
-
-/* Hover Effect */
-.mission-column:hover,
-.vision-column:hover {
-    transform: translateY(-10px); /* Efek hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek shadow saat hover */
-}
-
-/* Text Styling */
-.mission-column p,
-.vision-column p {
-    text-align: justify;
-    line-height: 1.8; /* Jarak antar baris diperbesar */
-    font-size: 18px; /* Ukuran font diperbesar */
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.introduction-section,
-.container.my-7 {
-    animation: fadeIn 1s ease-out; /* Efek fade-in */
-}
-
-/* Quote Section */
-.quote {
-  background-color: navy;
-  color: white;
-  font-size: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  margin: 0;
-}
-
-.quoteh2 {
-  font-size: 25px;
-  font-weight: bold;
+  padding-right: 50px;
 }
 
 /* History Section */
@@ -157,47 +71,41 @@
   align-items: center;
 }
 
-.history-title {
-  color: #000061;
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 100%;
-}
-
 /* Timeline Container */
 .timeline-container {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Timeline */
 .timeline {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  width: 60%;
-  padding-left: 65px;
+  padding: 20px 0;
 }
 
-/* Garis Timeline */
+/* Garis Horizontal */
 .timeline::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 60px;
-  width: 6px;
+  top: 160px;
+  left: 0;
+  right: 0;
+  height: 6px;
   background: #000061;
-  left: 100px; /* Sesuaikan posisi garis */
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 /* Timeline Item */
 .timeline-item {
   position: relative;
-  padding-left: 60px; /* Jarak desk dari garis */
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
 }
 
 /* Lingkaran Timeline */
@@ -209,10 +117,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -223,50 +127,193 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Garis Kecil Vertikal */
+.timeline-line {
+  width: 6px;
+  height: 40px;
+  background: #000061;
+  margin: 10px 0;
+}
+
 /* Deskripsi Timeline */
 .timeline-description {
-  margin-left: 50px; /* Jarak desk dari bulatan */
   padding: 15px;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  text-align: justify;
+  text-align: center;
+  width: 150px;
 }
 
 .timeline-description p {
   margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.4;
   color: #333;
 }
 
-.timeline-image {
-  width: 32%; /* Lebar container */
+/* Penyesuaian Posisi Tahun dan Deskripsi */
+.timeline-item:nth-child(odd) .timeline-circle {
+  order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-line {
+  order: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-description {
+  order: 3;
+}
+
+.timeline-item:nth-child(even) .timeline-circle {
+  order: 3;
+}
+
+.timeline-item:nth-child(even) .timeline-line {
+  order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-description {
+  order: 1;
+}
+
+/* Atur jarak deskripsi untuk 2015 dan 2023 */
+.timeline-item:nth-child(2) .timeline-description, /* 2015 */
+.timeline-item:nth-child(4) .timeline-description { /* 2023 */
+  margin-bottom: 25px;/* Jarak tambahan untuk deskripsi 2015 dan 2023 */
+}
+
+/* Atur jarak deskripsi untuk 2014, 2017, dan Now */
+.timeline-item:nth-child(1) .timeline-description, /* 2014 */
+.timeline-item:nth-child(3) .timeline-description, /* 2017 */
+.timeline-item:nth-child(5) .timeline-description { /* Now */
+  margin-top: 25px; /* Jarak default untuk deskripsi 2014, 2017, dan Now */
+}
+
+/* Vision and Mission Styling */
+.vision-title,
+.mission-title {
+  color: #000061;
+  font-weight: bold;
+  font-size: 20px; /* Ukuran font diperbesar */
+  margin-bottom: 10px; /* Jarak bawah */
+}
+
+.vision-subtitle,
+.mission-subtitle {
+  color: #000061;
+  font-weight: bold;
+  font-size: 40px; /* Ukuran font */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Vision and Mission Container */
+.container.my-7 {
+  max-width: 1400px; /* Lebar maksimal container */
+  padding-bottom: 2rem; /* Padding bawah diperbesar */
+  padding-top: 2rem; /* Padding atas diperbesar */
+}
+
+/* Kolom Kiri */
+.left-column {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 570px; /* Tinggi container */
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box; /* Pastikan padding termasuk dalam lebar */
+  flex-direction: column;
+  gap: 20px; /* Jarak antara Mission dan Vision */
+  padding-right: 2rem; /* Padding kanan */
 }
 
-.timeline-image img {
-  width: calc(100% - 80px); /* Sesuaikan lebar gambar dengan mengurangi padding */
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+/* Kolom Kanan */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Jarak antara deskripsi Mission dan Vision */
 }
 
-.timeline-image img.visible {
-  opacity: 1;
+/* Deskripsi Mission dan Vision */
+.mission-description p,
+.vision-description p {
+  text-align: justify;
+  line-height: 1.8; /* Jarak antar baris diperbesar */
+  font-size: 18px; /* Ukuran font diperbesar */
+  margin: 0; /* Hilangkan margin default */
+}
+
+/* Penyesuaian untuk memastikan sejajar */
+.row.align-items-start {
+  align-items: flex-start; /* Pastikan elemen sejajar dari atas */
+}
+
+.mission-heading,
+.vision-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Sejajarkan teks ke kiri */
+}
+
+/* Tambahkan ini untuk memastikan tinggi container sama */
+.mission-heading,
+.vision-heading,
+.mission-description,
+.vision-description {
+  min-height: 150px; /* Sesuaikan tinggi minimal */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Sejajarkan konten dari atas */
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: navy;
+  color: white;
+  padding: 50px 200px; /* Padding atas-bawah dan kiri-kanan */
+  text-align: center; /* Pusatkan teks */
+}
+
+.quote-content {
+  max-width: 800px; /* Lebar maksimal konten */
+  margin: 0 auto; /* Pusatkan konten */
+}
+
+/* Container untuk Foto, Nama, dan Jabatan */
+.author-container {
+  display: flex;
+  flex-direction: column; /* Tata letak vertikal */
+  align-items: center; /* Pusatkan horizontal */
+  margin-bottom: 20px; /* Jarak antara foto dan kutipan */
+}
+
+/* Foto Bulat */
+.author-image {
+  width: 120px; /* Lebar foto */
+  height: 120px; /* Tinggi foto */
+  border-radius: 50%; /* Membuat foto bulat */
+  object-fit: cover; /* Pastikan foto terisi penuh */
+  margin-bottom: 15px; /* Jarak antara foto dan teks */
+}
+
+/* Nama dan Jabatan */
+.author-info {
+  text-align: center; /* Teks sejajar ke tengah */
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.author-title {
+  font-size: 20px;
+  margin: 5px 0 0;
+}
+
+/* Kutipan */
+.quote-text .quoteh2 {
+  font-size: 18px; /* Ukuran font diperkecil */
+  font-weight: normal; /* Ketebalan font normal */
+  font-style: italic; /* Teks miring */
+  line-height: 1.6; /* Jarak antar baris */
+  margin: 0;
 }
 
 /* Certificate Section */

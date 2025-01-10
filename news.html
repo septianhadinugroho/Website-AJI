@@ -68,74 +68,62 @@
     <div class="about-hero-wrapper">
         <section class="about text-center">
             <div class="container">
-                <h1 style="font-size:55px; font-weight: bold; font-family: Arial, Helvetica; margin-top: 250px;">NEWS</h1>
-                <h2 style="font-size:25px; font-weight: bold; font-family: Arial, Helvetica;">UPDATE</h2>
+                <h1 style="font-size:55px; font-weight: 700; margin-top: 120px; color: #000061;">NEWS</h1>
+                <h2 style="font-size:25px; font-weight: 700; color: #000061;">UPDATE</h2>
             </div>
         </section>
     </div>
 
-    <!-- News Section -->
-    <div class="news-container">
-        <!-- News Item 1 -->
-        <div class="news-item">
-            <img src="assets/image1.jpg" alt="News Image 1">
-            <div class="news-content">
-                <div class="news-date">Tuesday, October 15, 2024</div>
-                <div class="news-title">Latest Project: Harbour Road II Toll Road</div>
-                <div class="news-description">
-                    The Harbour Road II Toll Road project, led by PT. Wijaya Karya (Persero), Tbk near the Jakarta International Stadium, aims to improve connectivity and support regional growth. PT. Aneka Jaringan Indonesia is committed to enhancing infrastructure in Jakarta. For more information, contact their marketing department.
-                </div>
-                <a href="#" class="read-more-btn" onclick="openModal('modal1')">READ MORE</a>
+    <!-- Search and Sort Section -->
+    <div class="search-sort-container">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search news..." oninput="searchNews()">
+                <select id="yearFilter" onchange="filterByYear()">
+                    <option value="">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
             </div>
         </div>
+    </div>
 
-        <!-- News Item 2 -->
-        <div class="news-item">
-            <img src="assets/image2.jpg" alt="News Image 2">
-            <div class="news-content">
-                <div class="news-date">Thursday, September 19, 2024</div>
-                <div class="news-title">Inauguration of the New Pool at PT. Aneka Jaringan Indonesia</div>
-                <div class="news-description">
-                    PT. Aneka Jaringan Indonesia inaugurated a new pool at its head office on September 19, 2024, to improve storage and efficiency. The event featured a traditional cone-cutting by directors. For more information, contact the marketing department.
-                </div>
-                <a href="#" class="read-more-btn" onclick="openModal('modal2')">READ MORE</a>
+    <!-- News Section -->
+    <div class="news-container">
+        <!-- News Items will be dynamically populated here -->
+    </div>
+
+    <!-- Pagination Section -->
+    <div class="pagination-container">
+        <div class="container">
+            <div class="pagination">
+                <button id="prevBtn" onclick="changePage(-1)">Prev</button>
+                <button class="page-btn active" onclick="changePage(1)">1</button>
+                <button class="page-btn" onclick="changePage(2)">2</button>
+                <button class="page-btn" onclick="changePage(3)">3</button>
+                <button class="page-btn" onclick="changePage(4)">4</button>
+                <button class="page-btn" onclick="changePage(5)">5</button>
+                <button id="nextBtn" onclick="changePage(1)">Next</button>
             </div>
         </div>
     </div>
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="newsModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>Latest Project: Harbour Road II Toll Road</h2>
-            <p>
-                The Harbour Road II Toll Road project has officially begun, with PT. Wijaya Karya (Persero), Tbk as the main contractor. This project is strategically located near Jakarta International Stadium and adjacent to other ongoing projects by PT. Aneka Jaringan Indonesia.
-                The Harbour Road II Toll Road is expected to enhance connectivity in the surrounding area, provide better access for the community, and support regional economic growth.
-                With the progress of this project, PT. Aneka Jaringan Indonesia is also committed to supporting infrastructure development around Jakarta and actively participating in projects that can improve the quality of life for the community.
-            </p>
-            <p>
-                For more information about this project, please contact: Marketing PT. Aneka Jaringan Indonesia<br>
-                Email: marketing@ptaji.co.id<br>
-                Phone: (021) 21057940
-            </p>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Inauguration of the New Pool at PT. Aneka Jaringan Indonesia</h2>
-            <p>
-                PT. Aneka Jaringan Indonesia proudly announces the inauguration of its new pool located at the company’s head office complex. The inauguration event, held on September 19, 2024, was attended by the management team and employees.
-                The purpose of the new pool is to enhance the storage capacity for construction equipment and materials, as well as to support the operational efficiency of the company.
-                The inauguration ceremony was marked by the traditional cutting of the cone (tumpeng) by Mr. Tung Sin Thian and Mr. Ngoi Tong King, directors of PT. Aneka Jaringan Indonesia. The atmosphere was filled with enthusiasm among the attendees, reflecting the great hopes for improved company performance.
-                PT. Aneka Jaringan Indonesia remains committed to enhancing the quality of its services and operations. This new pool represents a strategic step toward achieving the company’s vision as a leader in the construction industry.
-            </p>
-            <p>
-                For more information about this project, please contact: Marketing PT. Aneka Jaringan Indonesia<br>
-                Email: marketing@ptaji.co.id<br>
-                Phone: (021) 21057940
-            </p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="News Image" class="modal-image">
+            <p id="modalContent"></p>
+            <div class="modal-footer">
+                <img src="assets/logo.png" alt="Logo" class="modal-logo">
+                <div class="modal-contact">
+                    <p>For more information, please contact:</p>
+                    <p>Email: marketing@ptaji.co.id</p>
+                    <p>Phone: (021) 21057940</p>
+                </div>
+            </div>
         </div>
     </div>
 

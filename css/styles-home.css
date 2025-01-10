@@ -44,7 +44,7 @@ margin: 0; /* Menghilangkan margin default */
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2; /* Memastikan header berada di atas carousel */
+  z-index: 1000;
   background-color: transparent !important; /* Header transparan */
   transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }

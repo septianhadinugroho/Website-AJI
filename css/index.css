@@ -540,16 +540,15 @@ border: none; /* Hapus border */
 color: red; /* Warna tombol */
 font-size: 34px; /* Ukuran font */
 cursor: pointer; /* Tunjukkan bahwa ini adalah tombol */
-z-index: 10; /* Pastikan tombol di atas elemen lain */
+z-index: 3; /* Pastikan tombol di atas elemen lain */
 }
 
-
-.prev-service {
-left: 10px;
+.nav-service.prev-service {
+  left: 10px;
 }
 
-.next-service {
-right: 10px;
+.nav-service.next-service {
+  right: 10px;
 }
 
 /* Circle Background */
@@ -748,6 +747,7 @@ justify-content: space-between;
 height: 105vh;
 padding: 1px;
 position: relative;
+padding-top: 150px
 }
 
 .text-content-service {
@@ -868,6 +868,7 @@ text-align: center;
 font-weight: bold; 
 color: navy;
 margin-top: -200px;
+padding-top: 150px
 }
 
 .quote {
