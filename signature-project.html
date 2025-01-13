@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aneka Jaringan Indonesia</title>
+    <title>Signature Project - Aneka Jaringan Indonesia</title>
 
     <!-- Icon Web -->
     <link rel="shortcut icon" href="assets/logo-ico.ico" type="image/x-icon">
 
     <!-- Bootstrap Icons -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
@@ -64,92 +64,93 @@
         </header>
     </div>
 
-    <div class="containerFinished">
-    <!-- Left side for the main image with back button -->
-	    <div class="left-content">
-	        <a href="ongoing-project.html" class="back-button">&#8592;</a>
-	        <img src="assets/page1.jpg" alt="Main Project Image">
-	    </div>
-	    
-	    <!-- Right side for the project info and gallery -->
-	    <div class="right-content">
-	        <div class="project-info">
-	            <h3>PROJECT INFORMATION</h3>
-	            <p><strong>Owner:</strong> Sulfindo</p>
-	            <p><strong>Maincon:</strong> EPTCO Dian Persada</p>
-	            <p><strong>Consultant:</strong> -</p>
-	            <p><strong>Diameter:</strong> 600 mm</p>
-	            <p><strong>Total Depth:</strong> 5.664 m (354 nos)</p>
-	            <p><strong>Work Desc.:</strong> Bored Pile</p>
-	        </div>
-	        
-	        <!-- Gallery under the project info -->
-	        <div class="slider">
-            <div class="slides" id="slides-container">
-                <!-- Slides will be generated here dynamically -->
-            </div>
-            <div class="slider-buttons">
-                <button class="slider-button" onclick="prevSlide()">&#10094;</button>
-                <button class="slider-button" onclick="nextSlide()">&#10095;</button>
+    <!-- Signature Project Section -->
+    <div class="container my-4">
+        <div class="row align-items-start">
+            <div class="col-md-12">
+                <h2>SIGNATURE PROJECT</h2>
             </div>
         </div>
     </div>
-</div>
+    
+    <div class="container signature-project">
+        <!-- Konten proyek di sini -->
+        <div class="project-grid" id="project-grid">
+            <!-- Project cards will be dynamically inserted here -->
+        </div>
 
-<!-- Modal for zooming images -->
-<div class="modal" id="imageModal">
-    <div class="modal-content">
-        <button class="close-modal" onclick="closeModal()">&#10006;</button>
-        <img id="modalImage" src="" alt="Zoomed Image">
+        <!-- Pagination Section -->
+        <div class="pagination-container">
+            <div class="container">
+                <div class="pagination">
+                    <button id="prevBtn" onclick="changePage(-1)">Prev</button>
+                    <button class="page-btn active" onclick="changePage(1)">1</button>
+                    <button class="page-btn" onclick="changePage(2)">2</button>
+                    <button class="page-btn" onclick="changePage(3)">3</button>
+                    <button class="page-btn" onclick="changePage(4)">4</button>
+                    <button class="page-btn" onclick="changePage(5)">5</button>
+                    <button id="nextBtn" onclick="changePage(1)">Next</button>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-	<footer class="bg-navy text-white py-4">
-	    <div class="container">
-	        <div class="row">
-	            <!-- Bagian About -->
-	            <div class="col-md-4">
-	                <h5>PT. Aneka Jaringan Indonesia</h5>
-	                <p>
-	                    Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
-	                </p>
-	            </div>
+    <!-- Modal for Expanded Project View -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&#10006;</button>
+            <img id="modalImage" src="" alt="Project Image">
+            <h3 id="modalTitle"></h3>
+            <div id="modalInfo"></div>
+        </div>
+    </div>
 
-	            <!-- Bagian Navigasi -->
-	            <div class="col-md-4">
-	                <h5>Contact Us</h5>
-	                <ul class="list-unstyled">
-	                    <li>(021) 21057940</li>
-	                    <li>marketing@ptaji.co.id</li>
-	                </ul>
-	            </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>PT. Aneka Jaringan Indonesia</h5>
+                    <p>
+                        Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
+                    </p>
+                </div>
 
-	            <!-- Bagian Media Sosial -->
-	            <div class="col-md-4">
-	                <h5>Follow Us</h5>
-	                <div class="d-flex">
-	                    <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 24px;"></i></a>
-	                    <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 24px;"></i></a>
-	                    <a href="#" class="text-white me-3"><i class="bi bi-twitter" style="font-size: 24px;"></i></a>
-	                    <a href="#" class="text-white"><i class="bi bi-linkedin" style="font-size: 24px;"></i></a>
-	                </div>
-	            </div>
-	        </div>
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li>(021) 21057940</li>
+                        <li><a href="mailto:marketing@ptaji.co.id">marketing@ptaji.co.id</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons d-flex">
+                        <a href="https://www.facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/anekajaringanindonesia" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.x.com" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
 
-	        <hr class="bg-white" />
+            <hr />
 
-	        <!-- Copyright -->
-	        <div class="text-center">
-	            <p>&copy; 2024 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
-	        </div>
-	    </div>
-	</footer>
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p>&copy; 2024 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS and Dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS Eksternal -->
-    <script src="js/ongoing-project.js"></script>
-
+    <!-- Custom JS -->
+    <script src="js/signature-project.js"></script>
 </body>
 </html>
