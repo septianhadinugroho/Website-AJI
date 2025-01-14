@@ -1,0 +1,409 @@
+body {
+    color: #000061; /* Ubah warna teks default menjadi navy */
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Wrapper untuk Header + Hero */
+.header-hero-wrapper {
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero Section */
+.hero {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.about {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Nav links */
+.nav-link {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hero Section the definiton. etc */
+.about-hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Section for Icons and Text */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 0;
+}
+
+.service-item {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.service-item:hover {
+    background-color: #002B7F;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item button {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.service-item:hover button {
+    display: block;
+    opacity: 1;
+}
+
+.service-item img {
+    width: 100px;
+    margin-bottom: 1px;
+}
+
+.service-item h5 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.definition {
+    margin-top: 40px;
+}
+
+/* Section untuk keterangan */
+.content {
+    padding: 50px 10%;
+    margin: 20px auto;
+    max-width: 1350px;
+}
+/* Teks justify */
+.text-justify {
+    text-align: justify;
+    color: #000000; /* Gunakan warna abu-abu gelap untuk teks biasa */
+}
+
+.definition-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    margin-top: -30px;
+}
+
+.definition-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.definition-image {
+    max-width: 250px; /* Gambar diperkecil */
+    height: auto;
+    margin-top: 50px;
+}
+
+/* Ikon di samping definisi */
+.definition-content i {
+    font-size: 6rem; /* Ukuran ikon lebih besar */
+    margin-left: 20px; /* Jarak dari teks */
+    color: black; /* Warna ikon hitam */
+}
+
+.work-method-content,
+.work-method2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px; /* Jarak antara gambar dan teks */
+}
+
+.work-method-text,
+.work-method2-text {
+    flex: 1; /* Teks memenuhi sisa ruang */
+    max-width: 100%; /* Batasi lebar teks */
+}
+
+.work-method-image,
+.work-method2-image {
+    max-width: 12%; /* Gambar tidak terlalu besar */
+    height: auto;
+}
+
+#advantages {
+    text-align: left;
+    margin: 40px 0;
+}
+
+#advantages h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar item */
+    justify-content: space-between; /* Seimbangkan jarak */
+}
+
+.advantage-item {
+    display: flex;
+    width: 48%; /* Pastikan lebar sama */
+    align-items: flex-start; /* Align items ke atas */
+    margin-bottom: 20px;
+}
+.advantage-number {
+    background-color: navy;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.advantage-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.advantage-text p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.advantage-text {
+    flex: 1; /* Memenuhi sisa ruang yang tersedia */
+    max-width: calc(100% - 100px); /* Sesuaikan dengan lebar nomor dan margin */
+}
+
+#application {
+    margin: 50px 0;
+}
+
+#application h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000061;
+    margin-bottom: 20px;
+}
+
+.application-cards {
+    display: flex;
+    justify-content: space-between; /* Jarak antar card seimbang */
+    gap: 20px; /* Jarak antar card */
+    margin-bottom: -50px;
+}
+
+.card {
+    border: 3px solid #000061; /* Border navy */
+    background-color: #f7f7f7;
+    width: calc(25% - 20px); /* Lebar card disesuaikan */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    margin-bottom: 15px;
+    color: navy; /* Warna ikon hitam */
+    font-size: 3rem; /* Ukuran ikon lebih besar */
+}
+
+.card h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000061;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #000000;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.bg-navy {
+  background-color: #001f3f;
+}
+
+/* Section dalam konten */
+section {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: -190px;
+    }
+
+    .service-item {
+        max-width: 100%;
+        margin-bottom: 15px;
+        width: 200px;
+    }
+
+    .service-item h5 {
+        font-size: 24px;
+    }
+
+    .service-item button {
+        top: 20%;
+        left: 80%;
+    }
+
+    .service-item:hover button {
+        display: block;
+        opacity: 0;
+    }
+
+    .service-item img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 20px; /* Padding untuk mobile */
+    }
+
+    .definition-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .definition-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .definition-image {
+        max-width: 100%;
+    }
+
+    .work-method-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work-method-text {
+        flex: 1;
+        margin-right: 0px;
+    }
+
+    .work-method-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .work-method2-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work-method2-text {
+        flex: 1;
+        margin-right: 0px;
+        margin-top: 30px;
+        left: 100px;
+        margin-left: -60px;
+    }
+
+    .work-method2-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .advantage-list {
+        flex-direction: column;
+    }
+    .advantage-item {
+        width: 100%;
+    }
+
+    .application-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

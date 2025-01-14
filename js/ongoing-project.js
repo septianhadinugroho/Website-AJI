@@ -1,54 +1,28 @@
-const images = ["/assets/image1.jpg", "/assets/image2.jpg", "/assets/image3.jpg", "/assets/image4.jpg", "/assets/image5.jpg"];
-const slidesContainer = document.getElementById("slides-container");
-const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
+document.addEventListener("DOMContentLoaded", function () {
+    // Fungsi untuk animasi progress bar
+    function animateProgressBar(progressBarId, progressTextId, targetWidth) {
+        const progressBar = document.getElementById(progressBarId);
+        const progressText = document.getElementById(progressTextId);
+        let currentWidth = 0;
 
-function createSlides(images, imagesPerSlide = 3) {
-    images.forEach((image, index) => {
-        const slide = document.createElement("div");
-        slide.classList.add("slide");
-        slide.style.flex = `0 0 ${100 / imagesPerSlide}%`;
+        // Interval untuk mengubah width secara bertahap
+        const interval = setInterval(() => {
+            if (currentWidth >= targetWidth) {
+                clearInterval(interval); // Hentikan animasi jika sudah mencapai target
+                progressBar.classList.add("completed"); // Tambahkan kelas completed
+            } else {
+                currentWidth++; // Tambahkan 1% setiap iterasi
+                progressBar.style.width = currentWidth + "%"; // Update width
+                progressText.textContent = currentWidth + "%"; // Update teks persentase
+            }
+        }, 20); // Kecepatan animasi (ms)
+    }
 
-        const img = document.createElement("img");
-        img.src = image;
-        img.alt = `Slide Image ${index + 1}`;
-        img.onclick = () => openModal(image); // Set click event to open modal
-
-        slide.appendChild(img);
-        slidesContainer.appendChild(slide);
-    });
-}
-
-createSlides(images);
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    const totalSlides = Math.ceil(images.length / 3);
-    currentIndex = (index + totalSlides) % totalSlides;
-    const offset = -currentIndex * 100;
-    slidesContainer.style.transform = `translateX(${offset}%)`;
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    modal.style.display = "none"; // Pastikan modal tidak muncul di awal
+    // Jalankan animasi untuk setiap progress bar
+    animateProgressBar("progressBar1", "progressText1", 95);
+    animateProgressBar("progressBar2", "progressText2", 80);
+    animateProgressBar("progressBar3", "progressText3", 65);
+    animateProgressBar("progressBar4", "progressText4", 45);
+    animateProgressBar("progressBar5", "progressText5", 25);
+    animateProgressBar("progressBar6", "progressText6", 15);
 });
-
-function openModal(imageSrc) {
-    modalImage.src = imageSrc;
-    modal.style.display = "flex";
-}
-
-function closeModal() {
-    modal.style.display = "none";
-}
-
-setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
