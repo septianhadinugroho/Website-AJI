@@ -10,27 +10,30 @@
 
 /* Signature Project Section */
 .signature-project {
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 20px;
 }
 
+/* Signature Project Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 projects per row */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 30px;
     margin-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .project-card {
-    background-color: #fcfcfc;
+    background-color: #000061;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
     cursor: pointer;
     display: flex;
-    flex-direction: column; /* Membuat card menjadi potrait */
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -39,7 +42,7 @@
 
 .project-image {
     position: relative;
-    height: 200px;
+    height: 500px; /* Tinggi gambar lebih besar */
     overflow: hidden;
 }
 
@@ -50,54 +53,22 @@
 }
 
 .project-details {
-    padding: 15px;
-    flex-grow: 1; /* Memastikan detail project memenuhi sisa ruang */
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .project-details h3 {
     margin-top: 0;
-    font-size: 1.2rem;
-    color: #1d1f7a;
+    font-size: 1.5rem; /* Judul lebih besar */
+    color: #ffffff;
     font-weight: bold;
 }
 
 .project-info {
     margin-top: 10px;
-}
-
-.project-info p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-    color: #333;
-}
-
-/* Pagination Section */
-.pagination-container {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.pagination {
-    display: inline-flex;
-    gap: 10px;
-}
-
-.pagination button {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.pagination button.active {
-    background-color: #1d1f7a;
-    color: white;
-}
-
-.pagination button:hover {
-    background-color: #f1f1f1;
+    font-size: 1rem; /* Deskripsi lebih besar */
+    color: #ffffff;
+    text-align: justify; /* Teks justify */
 }
 
 /* Modal Styling */
@@ -112,17 +83,17 @@
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    overflow: auto; /* Memungkinkan scrolling pada modal */
+    overflow: auto;
 }
 
 .modal-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    max-width: 400px;
-    width: 90%;
+    max-width: 1400px;
     max-height: 90vh; /* Batasi tinggi modal */
-    overflow-y: auto; /* Memungkinkan scrolling di dalam konten modal */
+    width: 90%;
+    overflow-y: auto;
     position: relative;
 }
 
@@ -130,7 +101,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #1d1f7a;
+    background-color: #000061;
     color: white;
     border: none;
     border-radius: 50%;
@@ -138,23 +109,106 @@
     height: 30px;
     font-size: 18px;
     cursor: pointer;
+    z-index: 1001; /* Pastikan tombol close di atas konten */
+}
+
+.close-modal:hover {
+    background-color: #ff0000;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Gambar dan teks setengah-setengah */
+    gap: 20px;
+    align-items: flex-start; /* Pastikan konten di bagian atas */
+}
+
+.modal-image-container {
+    width: 100%;
+    height: 550px; /* Ukuran tetap untuk gambar */
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 #modalImage {
     width: 100%;
-    height: auto;
-    max-height: 500px; /* Batasi tinggi gambar */
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Gambar akan menutupi container tanpa merubah aspek rasio */
     border-radius: 8px;
+}
+
+.modal-text-container {
+    padding: 0 20px;
+    align-self: flex-start; /* Deskripsi mentok ke atas */
 }
 
 #modalTitle {
     color: #1d1f7a;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 0;
+    font-size: 2rem; /* Judul lebih besar */
 }
 
 #modalInfo {
+    color: #000000;
+    font-size: 1.1rem; /* Teks lebih besar */
+    text-align: justify; /* Teks justify */
+    margin-top: 10px; /* Jarak antara judul dan deskripsi */
+}
+
+.read-more-btn {
+    background-color: #ffffff;
+    color: navy;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Radius diperbesar */
+    cursor: pointer;
     margin-top: 10px;
-    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.read-more-btn:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Pagination Section */
+.pagination-container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Agar tombol tidak overflow di layar kecil */
+    justify-content: center;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #000061;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+.pagination button.active {
+    background-color: #1d1f7a;
+    color: white;
+    border-color: #1d1f7a;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #f1f1f1;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
 }

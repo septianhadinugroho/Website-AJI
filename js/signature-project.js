@@ -2,6 +2,7 @@ const projects = [
     {
         title: "Proyek Jembatan Suramadu",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         info: {
             owner: "PT. Jasa Marga",
             maincon: "PT. Adhi Karya",
@@ -14,6 +15,7 @@ const projects = [
     {
         title: "Proyek Tol Trans Jawa",
         images: ["assets/page2.jpg", "assets/page3.jpg", "assets/page1.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         info: {
             owner: "PT. Jasa Marga",
             maincon: "PT. Waskita Karya",
@@ -26,6 +28,7 @@ const projects = [
     {
         title: "Proyek Bandara Internasional Yogyakarta",
         images: ["assets/page3.jpg", "assets/page1.jpg", "assets/page2.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         info: {
             owner: "Kementerian Perhubungan",
             maincon: "PT. Pembangunan Perumahan",
@@ -38,6 +41,7 @@ const projects = [
     {
         title: "Proyek Pelabuhan Patimban",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         info: {
             owner: "PT. Pelabuhan Indonesia II",
             maincon: "PT. Wijaya Karya",
@@ -50,6 +54,7 @@ const projects = [
     {
         title: "Proyek MRT Jakarta Fase 2",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         info: {
             owner: "PT. MRT Jakarta",
             maincon: "PT. Wijaya Karya",
@@ -62,6 +67,7 @@ const projects = [
     {
         title: "Proyek PLTU Jawa 7",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         info: {
             owner: "PT. PLN",
             maincon: "PT. Pembangunan Perumahan",
@@ -70,131 +76,11 @@ const projects = [
             totalDepth: "11.000 m (350 nos)",
             workDesc: "Pembangunan pembangkit listrik tenaga uap dengan kapasitas 2x1000 MW."
         }
-    },
-    {
-        title: "Proyek Bendungan Jatigede",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "Kementerian PUPR",
-            maincon: "PT. Adhi Karya",
-            consultant: "PT. Wijaya Karya",
-            diameter: "1100 mm",
-            totalDepth: "14.000 m (450 nos)",
-            workDesc: "Pembangunan bendungan dengan kapasitas tampung 980 juta m³."
-        }
-    },
-    {
-        title: "Proyek Gedung Perkantoran CBD Jakarta",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Danayasa Arthatama",
-            maincon: "PT. Waskita Karya",
-            consultant: "PT. Hutama Karya",
-            diameter: "750 mm",
-            totalDepth: "7.500 m (240 nos)",
-            workDesc: "Pembangunan gedung perkantoran 30 lantai di kawasan CBD Jakarta."
-        }
-    },
-    {
-        title: "Proyek Apartemen Taman Anggrek",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Agung Podomoro Land",
-            maincon: "PT. Pembangunan Perumahan",
-            consultant: "PT. Nindya Karya",
-            diameter: "650 mm",
-            totalDepth: "6.000 m (200 nos)",
-            workDesc: "Pembangunan apartemen 25 lantai dengan fasilitas lengkap."
-        }
-    },
-    {
-        title: "Proyek Jalan Tol Semarang-Solo",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Jasa Marga",
-            maincon: "PT. Waskita Karya",
-            consultant: "PT. Hutama Karya",
-            diameter: "950 mm",
-            totalDepth: "13.000 m (420 nos)",
-            workDesc: "Pembangunan jalan tol sepanjang 75 km dengan 4 jalur."
-        }
-    },
-    {
-        title: "Proyek Stadion Gelora Bung Karno",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "Kementerian PUPR",
-            maincon: "PT. Adhi Karya",
-            consultant: "PT. Wijaya Karya",
-            diameter: "800 mm",
-            totalDepth: "10.500 m (330 nos)",
-            workDesc: "Renovasi stadion dengan kapasitas 82.000 penonton."
-        }
-    },
-    {
-        title: "Proyek Pusat Perbelanjaan Grand Indonesia",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Djarum",
-            maincon: "PT. Waskita Karya",
-            consultant: "PT. Hutama Karya",
-            diameter: "700 mm",
-            totalDepth: "8.500 m (270 nos)",
-            workDesc: "Pembangunan pusat perbelanjaan 10 lantai dengan area parkir bawah tanah."
-        }
-    },
-    {
-        title: "Proyek Hotel Bintang 5 di Bali",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Bali Tourism Development",
-            maincon: "PT. Pembangunan Perumahan",
-            consultant: "PT. Nindya Karya",
-            diameter: "600 mm",
-            totalDepth: "5.500 m (180 nos)",
-            workDesc: "Pembangunan hotel bintang 5 dengan 300 kamar dan fasilitas mewah."
-        }
-    },
-    {
-        title: "Proyek Pabrik Semen di Jawa Timur",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. Semen Indonesia",
-            maincon: "PT. Wijaya Karya",
-            consultant: "PT. Hutama Karya",
-            diameter: "1200 mm",
-            totalDepth: "16.000 m (520 nos)",
-            workDesc: "Pembangunan pabrik semen dengan kapasitas produksi 5 juta ton per tahun."
-        }
-    },
-    {
-        title: "Proyek Pembangkit Listrik Tenaga Surya",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "PT. PLN",
-            maincon: "PT. Waskita Karya",
-            consultant: "PT. Nindya Karya",
-            diameter: "500 mm",
-            totalDepth: "4.000 m (130 nos)",
-            workDesc: "Pembangunan pembangkit listrik tenaga surya dengan kapasitas 100 MW."
-        }
-    },
-    {
-        title: "Proyek Rumah Sakit Umum Daerah",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        info: {
-            owner: "Pemerintah Provinsi Jawa Barat",
-            maincon: "PT. Adhi Karya",
-            consultant: "PT. Wijaya Karya",
-            diameter: "850 mm",
-            totalDepth: "9.500 m (310 nos)",
-            workDesc: "Pembangunan rumah sakit umum dengan kapasitas 500 tempat tidur."
-        }
     }
 ];
 
 let currentPage = 1;
-const projectsPerPage = 4;
+const projectsPerPage = 2; // 2 proyek per halaman
 let intervalIds = {}; // Simpan ID interval untuk setiap proyek
 let modalIntervalId = null; // Simpan ID interval untuk modal
 
@@ -217,12 +103,8 @@ function renderProjects(page) {
             <div class="project-details">
                 <h3>${project.title}</h3>
                 <div class="project-info">
-                    <p><strong>Owner:</strong> ${project.info.owner}</p>
-                    <p><strong>Maincon:</strong> ${project.info.maincon}</p>
-                    <p><strong>Consultant:</strong> ${project.info.consultant}</p>
-                    <p><strong>Diameter:</strong> ${project.info.diameter}</p>
-                    <p><strong>Total Depth:</strong> ${project.info.totalDepth}</p>
-                    <p><strong>Work Desc:</strong> ${project.info.workDesc}</p>
+                    <p>${project.longDesc}</p>
+                    <button class="read-more-btn" onclick="openModal(${start + index})">Read More</button>
                 </div>
             </div>
         `;
@@ -237,13 +119,7 @@ function renderProjects(page) {
         }, 3000); // Change image every 3 seconds
 
         // Save the interval ID for this project
-        intervalIds[index] = intervalId;
-
-        // Stop the interval when the project is clicked
-        projectCard.addEventListener("click", () => {
-            clearInterval(intervalIds[index]); // Hentikan interval
-            openModal(project);
-        });
+        intervalIds[start + index] = intervalId;
 
         projectGrid.appendChild(projectCard);
     });
@@ -251,8 +127,8 @@ function renderProjects(page) {
     updatePaginationButtons();
 }
 
-// Function to open modal
-function openModal(project) {
+function openModal(index) {
+    const project = projects[index];
     const modal = document.getElementById("projectModal");
     const modalImage = document.getElementById("modalImage");
     const modalTitle = document.getElementById("modalTitle");
@@ -262,12 +138,12 @@ function openModal(project) {
     modalImage.src = project.images[currentImageIndex]; // Tampilkan gambar pertama
     modalTitle.textContent = project.title;
     modalInfo.innerHTML = `
+        <p>${project.longDesc}</p>
         <p><strong>Owner:</strong> ${project.info.owner}</p>
         <p><strong>Maincon:</strong> ${project.info.maincon}</p>
         <p><strong>Consultant:</strong> ${project.info.consultant}</p>
         <p><strong>Diameter:</strong> ${project.info.diameter}</p>
         <p><strong>Total Depth:</strong> ${project.info.totalDepth}</p>
-        <p><strong>Work Desc:</strong> ${project.info.workDesc}</p>
     `;
     modal.style.display = "flex";
 
@@ -345,6 +221,6 @@ function goToPage(page) {
 }
 
 // Initialize the page
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     renderProjects(currentPage);
 });

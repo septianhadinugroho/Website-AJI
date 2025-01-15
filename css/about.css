@@ -289,6 +289,7 @@
   border-radius: 50%; /* Membuat foto bulat */
   object-fit: cover; /* Pastikan foto terisi penuh */
   margin-bottom: 15px; /* Jarak antara foto dan teks */
+  margin-top: -20px;
 }
 
 /* Nama dan Jabatan */
@@ -313,7 +314,7 @@
   font-weight: normal; /* Ketebalan font normal */
   font-style: italic; /* Teks miring */
   line-height: 1.6; /* Jarak antar baris */
-  margin: 0;
+  margin-bottom: -20px;
 }
 
 /* Certificate Section */

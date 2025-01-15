@@ -1,44 +1,67 @@
-.content {
-    padding: 30px;
-    text-align: center;
-}
-
+/* Contact Section */
 .containercontact {
-    width: 950px;
+    width: 90%;
+    max-width: 1200px;
     margin: 80px auto;
     color: white;
     line-height: 1.5;
+    padding: 40px;
+    border-radius: 15px;
 }
 
 .text-centercontact {
     text-align: center;
+    color: #000061;
+    margin-bottom: 40px;
+}
+
+.text-centercontact h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000061;
+}
+
+.text-centercontact p {
+    font-size: 1.2em;
+    color: #000000;
 }
 
 .contentcontact {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: stretch;
     margin-top: 40px;
 }
 
 .icon {
-    background-color: white;
-    border-radius: 30px;
-    padding: 15px;
-    vertical-align: top;
-    width: 70px;
-    height: 70px;
+    background-color: #000061;
+    border-radius: 50%;
+    padding: 20px; /* Diperbesar */
+    width: 80px; /* Diperbesar */
+    height: 80px; /* Diperbesar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 28px; /* Diperbesar */
 }
 
 .contact-info {
     display: inline-block;
     padding: 4px 20px 0px 20px;
+    color: #000061;
+}
+
+.contact-info div {
+    color: #000000; /* Isi teks (address, phone, email) berwarna hitam */
 }
 
 .address-line {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px; /* Padding atas dikurangi */
 }
 
 .col-1 {
@@ -46,43 +69,84 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
+    padding: 20px; /* Padding dalam border dikurangi */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000061; /* Border navy */
 }
 
 .map-container {
     margin-top: 20px;
     border: none;
     height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .col-2 {
     flex: 1 1 auto;
     background-color: white;
+    padding: 25px; /* Padding dalam border dikurangi */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000061; /* Border navy */
+}
+
+.send-message-title {
+    margin-bottom: 20px;
+    color: #000061;
+    font-weight: bold;
 }
 
 .form-containercontact {
     color: #000;
-    padding: 30px;
+    padding: 20px;
 }
 
 .contact-info-title {
-    color: black;
+    color: #000061;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .form-row {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .form-field {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000061;
+    padding: 10px 0;
+    font-size: 1em;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.form-field:focus {
+    border-bottom-color: #000061;
+    outline: none;
 }
 
 .send-btn {
-    border: 0px;
-    padding: 12px 26px;
-    background-color: #01bdd4;
+    border: 2px solid #000061; /* Border navy */
+    padding: 10px 26px;
+    background-color: #000061;
     color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.send-btn:hover {
+    background-color: red;
+    border-color: red; /* Border merah saat hover */
 }
 
 @media all and (max-width: 1024px) {
@@ -106,6 +170,12 @@
 
 @media all and (max-width: 500px) {
     .containercontact {
-        padding: 10px;
+        padding: 20px;
+    }
+    .text-centercontact h1 {
+        font-size: 2em;
+    }
+    .text-centercontact p {
+        font-size: 1em;
     }
 }
