@@ -1,80 +1,68 @@
 const projects = [
     {
-        title: "Proyek Jembatan Suramadu",
+        title: "Proyek Sarulla Geothermal",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        longDesc: "Proyek ini melibatkan instalasi pipa konduktor untuk mendukung pengembangan energi geothermal. PT. Aneka Jaringan Indonesia berperan penting dalam memastikan kelancaran dan stabilitas instalasi pipa konduktor di lokasi yang penuh tantangan ini. Proyek ini menjadi bagian penting dari upaya Indonesia untuk meningkatkan penggunaan energi terbarukan dan mendukung pengembangan sektor energi di wilayah Sumatera Utara.",
         info: {
-            owner: "PT. Jasa Marga",
-            maincon: "PT. Adhi Karya",
-            consultant: "PT. Wijaya Karya",
-            diameter: "1200 mm",
-            totalDepth: "15.000 m (500 nos)",
-            workDesc: "Pembangunan jembatan sepanjang 5,4 km dengan struktur baja dan beton."
+            client: "PT. Jasa Marga",
+            diameter: "24'",
+            totalLength: "105 m’",
+            workDesc: "Conductor Pipe Installation"
         }
     },
     {
-        title: "Proyek Tol Trans Jawa",
-        images: ["assets/page2.jpg", "assets/page3.jpg", "assets/page1.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Proyek Renovasi Masjid Istiqlal",
+        images: ["assets/signature-masjid1.jpg", "assets/signature-masjid2.jpg", "assets/signature-masjid3.jpg"],
+        longDesc: "PT. Aneka Jaringan Indonesia berhasil menyelesaikan pekerjaan pondasi pada proyek renovasi Masjid Istiqlal dengan pemasangan tiang bor (bored pile & secant pile) terbanyak sepanjang sejarah perusahaan, mencapai total panjang bor 31.865 meter. Pencapaian ini bukan hanya menunjukkan keunggulan dalam bidang konstruksi pondasi, tetapi juga kontribusi besar PT. Aneka Jaringan Indonesia dalam memperkuat salah satu tempat ibadah terbesar di Indonesia.",
         info: {
-            owner: "PT. Jasa Marga",
-            maincon: "PT. Waskita Karya",
-            consultant: "PT. Hutama Karya",
+            client: "PT. Waskita Karya (Persero) Tbk",
             diameter: "800 mm",
-            totalDepth: "10.000 m (300 nos)",
-            workDesc: "Pembangunan jalan tol sepanjang 72 km dengan 6 jalur."
+            totalLength: "31.865 m’",
+            workDesc: "Bored Pile & Secant Pile"
         }
     },
     {
-        title: "Proyek Bandara Internasional Yogyakarta",
+        title: "Proyek DDT Manggarai",
         images: ["assets/page3.jpg", "assets/page1.jpg", "assets/page2.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        longDesc: "Dalam proyek pembangunan fasilitas perkeretaapian Manggarai-Jatinegara (Paket A) Tahap II, PT. Aneka Jaringan Indonesia berhasil menyelesaikan pekerjaan Main Line II berdiameter 1200 mm, meskipun terletak di tengah pusat kota yang padat. Dengan tantangan mobilisasi alat yang sulit serta lingkungan yang padat penduduk di sekitar proyek, PT. Aneka Jaringan Indonesia tetap mampu mengatasi semua hambatan tersebut. Keahlian dan ketelitian tim AJI memastikan pekerjaan pondasi ini selesai tepat waktu dan sesuai standar, mendukung kelancaran pembangunan infrastruktur transportasi di Jakarta.",
         info: {
-            owner: "Kementerian Perhubungan",
-            maincon: "PT. Pembangunan Perumahan",
-            consultant: "PT. Angkasa Pura II",
-            diameter: "1000 mm",
-            totalDepth: "12.500 m (400 nos)",
-            workDesc: "Pembangunan bandara internasional dengan kapasitas 20 juta penumpang per tahun."
+            client: "PT. Waskita Karya (Persero) Tbk",
+            diameter: "1200 mm",
+            totalLength: "17.436 m’",
+            workDesc: "Bored Pile"
         }
     },
     {
-        title: "Proyek Pelabuhan Patimban",
+        title: "Proyek Sky House Alam Sutera+ Phase 2",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        longDesc: "Proyek Sky House Alam Sutera+ Phase 2 adalah proyek gedung dengan nilai kontrak terbesar yang pernah dikerjakan oleh PT. Aneka Jaringan Indonesia. Pekerjaan pondasi untuk proyek ini melibatkan tiga diameter berbeda dan jumlah titik yang banyak. Untuk mengatasi tantangan tersebut, PT. AJI menggunakan empat alat bor sekaligus, memastikan efisiensi dan kecepatan dalam penyelesaian pekerjaan pondasi yang kokoh dan stabil, mendukung kelancaran pembangunan gedung megah ini.",
         info: {
-            owner: "PT. Pelabuhan Indonesia II",
-            maincon: "PT. Wijaya Karya",
-            consultant: "PT. Nindya Karya",
-            diameter: "900 mm",
-            totalDepth: "8.000 m (250 nos)",
-            workDesc: "Pembangunan pelabuhan kontainer dengan kapasitas 7,5 juta TEUs per tahun."
+            client: "PT. Risland Sutera Property",
+            diameter: "600 mm, 800 mm, 1200 mm",
+            totalLength: "16.000 m’",
+            workDesc: "Bored Pile"
         }
     },
     {
-        title: "Proyek MRT Jakarta Fase 2",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Proyek Jalan Toll Harbour Road II",
+        images: ["assets/signature-hbr2-1.jpg", "assets/signature-hbr2-2.jpg", "assets/signature-hbr2-3.jpg"],
+        longDesc: "Proyek Jalan Tol Harbour Road II adalah proyek pertama di utara kota Jakarta yang melibatkan pekerjaan pondasi dengan diameter paling besar yang pernah dikerjakan oleh PT. Aneka Jaringan Indonesia. Proyek ini merupakan tonggak penting dalam sejarah perusahaan, menghadirkan tantangan besar dalam hal konstruksi pondasi yang kokoh dan stabil, untuk mendukung infrastruktur jalan tol yang akan memperlancar konektivitas di kawasan Jakarta Utara.",
         info: {
-            owner: "PT. MRT Jakarta",
-            maincon: "PT. Wijaya Karya",
-            consultant: "PT. Hutama Karya",
-            diameter: "700 mm",
-            totalDepth: "9.000 m (280 nos)",
-            workDesc: "Pembangunan jalur MRT sepanjang 12 km dengan 7 stasiun."
+            client: "PT. Girder Indonesia",
+            diameter: "1800 mm",
+            totalLength: "9285 m’",
+            workDesc: "Bored Pile"
         }
     },
     {
-        title: "Proyek PLTU Jawa 7",
+        title: "Proyek Upgrading Rinjani Way Batu Merah",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        longDesc: "Proyek Upgrading Rinjani Way Batu Merah di Ambon menjadi proyek pertama PT. Aneka Jaringan Indonesia di Indonesia bagian Timur. Dengan tantangan lokasi yang jauh dan terpencil, mobilisasi alat berat harus melalui pengiriman menggunakan kapal agar seluruh alat berat dapat sampai di lokasi proyek. Keberhasilan PT. Aneka dalam mengatasi tantangan geografis ini menunjukkan kemampuan perusahaan dalam menangani proyek besar di seluruh wilayah Indonesia, termasuk di daerah-daerah yang sulit dijangkau.",
         info: {
-            owner: "PT. PLN",
-            maincon: "PT. Pembangunan Perumahan",
-            consultant: "PT. Nindya Karya",
-            diameter: "850 mm",
-            totalDepth: "11.000 m (350 nos)",
-            workDesc: "Pembangunan pembangkit listrik tenaga uap dengan kapasitas 2x1000 MW."
+            client: "Jaya Konstruksi Selaras KSO",
+            diameter: "800 & 1000 mm",
+            totalLength: "3600 m’",
+            workDesc: "Secant Pile"
         }
     }
 ];
@@ -139,11 +127,10 @@ function openModal(index) {
     modalTitle.textContent = project.title;
     modalInfo.innerHTML = `
         <p>${project.longDesc}</p>
-        <p><strong>Owner:</strong> ${project.info.owner}</p>
-        <p><strong>Maincon:</strong> ${project.info.maincon}</p>
-        <p><strong>Consultant:</strong> ${project.info.consultant}</p>
+        <p><strong>Client:</strong> ${project.info.client}</p>
         <p><strong>Diameter:</strong> ${project.info.diameter}</p>
-        <p><strong>Total Depth:</strong> ${project.info.totalDepth}</p>
+        <p><strong>Total Length:</strong> ${project.info.totalLength}</p>
+        <p><strong>Work Desc:</strong> ${project.info.workDesc}</p>
     `;
     modal.style.display = "flex";
 

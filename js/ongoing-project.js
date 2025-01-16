@@ -19,10 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Jalankan animasi untuk setiap progress bar
-    animateProgressBar("progressBar1", "progressText1", 95);
-    animateProgressBar("progressBar2", "progressText2", 80);
-    animateProgressBar("progressBar3", "progressText3", 65);
-    animateProgressBar("progressBar4", "progressText4", 45);
-    animateProgressBar("progressBar5", "progressText5", 25);
-    animateProgressBar("progressBar6", "progressText6", 15);
+    animateProgressBar("progressBar1", "progressText1", 75);
+    animateProgressBar("progressBar2", "progressText2", 89);
+    animateProgressBar("progressBar3", "progressText3", 94);
+    animateProgressBar("progressBar4", "progressText4", 90);
+    animateProgressBar("progressBar5", "progressText5", 52);
+    animateProgressBar("progressBar6", "progressText6", 70);
+    animateProgressBar("progressBar7", "progressText7", 25);
 });
