@@ -1,6 +1,6 @@
 const projects = [
     {
-        title: "Proyek Sarulla Geothermal",
+        title: "Sarulla Geothermal Project",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
         longDesc: "This project involves the installation of conductor pipes to support the development of geothermal energy. PT. Aneka Jaringan Indonesia plays a crucial role in ensuring the smooth and stable installation of conductor pipes in this challenging location. The project is an essential part of Indonesia's efforts to increase the use of renewable energy and support the development of the energy sector in North Sumatra.",
         info: {
@@ -11,7 +11,7 @@ const projects = [
         }
     },
     {
-        title: "Proyek Renovasi Masjid Istiqlal",
+        title: "Istiqlal Mosque Renovation Project",
         images: ["assets/signature-masjid1.jpg", "assets/signature-masjid2.jpg", "assets/signature-masjid3.jpg"],
         longDesc: "PT. Aneka Jaringan Indonesia has successfully completed the foundation work for the Istiqlal Mosque renovation project, achieving the largest installation of bored piles and secant piles in the company's history, with a total drilling length of 31,865 meters. This accomplishment not only demonstrates excellence in foundation construction but also highlights PT. Aneka Jaringan Indonesia's significant contribution to strengthening one of Indonesia's largest places of worship.",
         info: {
@@ -22,7 +22,7 @@ const projects = [
         }
     },
     {
-        title: "Proyek DDT Manggarai",
+        title: "Manggarai DDT Project",
         images: ["assets/page3.jpg", "assets/page1.jpg", "assets/page2.jpg"],
         longDesc: "In the Manggarai-Jatinegara railway facility development project (Package A) Phase II, PT. Aneka Jaringan Indonesia successfully completed the Main Line II work with a diameter of 1200 mm, despite being located in the heart of a densely populated urban area. Facing challenges such as difficult equipment mobilization and a densely populated environment around the project site, PT. Aneka Jaringan Indonesia managed to overcome all obstacles. The expertise and precision of the AJI team ensured that this foundation work was completed on time and met all standards, supporting the smooth development of transportation infrastructure in Jakarta.",
         info: {
@@ -33,7 +33,7 @@ const projects = [
         }
     },
     {
-        title: "Proyek Sky House Alam Sutera+ Phase 2",
+        title: "Sky House Alam Sutera+ Phase 2 Project",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
         longDesc: "The Sky House Alam Sutera+ Phase 2 project is the largest contract-value building project ever undertaken by PT. Aneka Jaringan Indonesia. The foundation work for this project involved three different diameters and a large number of points. To address these challenges, PT. AJI utilized four drilling machines simultaneously, ensuring efficiency and speed in completing a strong and stable foundation. This approach supported the smooth construction of this magnificent building, showcasing PT. Aneka Jaringan Indonesia's capability in handling large-scale and complex projects.",
         info: {
@@ -44,7 +44,7 @@ const projects = [
         }
     },
     {
-        title: "Proyek Jalan Toll Harbour Road II",
+        title: "Harbour Road II Toll Road Project",
         images: ["assets/signature-hbr2-1.jpg", "assets/signature-hbr2-2.jpg", "assets/signature-hbr2-3.jpg"],
         longDesc: "The Harbour Road II Toll Road project is the first project in northern Jakarta to involve foundation work with the largest diameter ever handled by PT. Aneka Jaringan Indonesia. This project marks a significant milestone in the company's history, presenting major challenges in constructing a strong and stable foundation to support the toll road infrastructure. Once completed, it will enhance connectivity in the North Jakarta area, demonstrating PT. Aneka Jaringan Indonesia's expertise in delivering complex and impactful infrastructure projects.",
         info: {
@@ -55,7 +55,7 @@ const projects = [
         }
     },
     {
-        title: "Proyek Upgrading Rinjani Way Batu Merah",
+        title: "Upgrading Rinjani Way Batu Merah Project",
         images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
         longDesc: "The Upgrading Rinjani Way Batu Merah project in Ambon marks PT. Aneka Jaringan Indonesia's first project in Eastern Indonesia. Given the remote and challenging location, the mobilization of heavy equipment required transportation by ship to ensure all machinery reached the project site. PT. Aneka's success in overcoming these geographical challenges highlights the company's capability to manage large-scale projects across all regions of Indonesia, including hard-to-reach areas. This achievement underscores PT. Aneka Jaringan Indonesia's commitment to delivering excellence and supporting infrastructure development throughout the archipelago.",
         info: {
