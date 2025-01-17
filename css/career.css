@@ -110,11 +110,9 @@
     transform: translateY(-5px);
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.card i {
+    margin-bottom: 15px; /* Jarak antara ikon dan teks */
+    transition: color 0.3s ease; /* Efek transisi saat hover */
 }
 
 .card h4 {
