@@ -24,12 +24,16 @@ width: 87px; /* Atur lebar logo sesuai kebutuhan */
 height: auto; /* Mempertahankan rasio aspek */
 }
 
+.logo-tengah {
+  width: 250px;
+}
+
 .vertical-text {
 display: flex; /* Menggunakan Flexbox untuk menampilkan teks secara vertikal */
 flex-direction: column; /* Mengatur arah flex menjadi kolom */
 height: 50px; /* Tinggi container teks disesuaikan dengan tinggi logo */
 justify-content: center; /* Menyelaraskan teks di tengah */
-color: white; /* Warna teks */
+color: transparent;
 font-size: 17px;
 }
 
