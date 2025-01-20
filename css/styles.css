@@ -197,14 +197,60 @@ a {
   /* text-decoration: underline; */
   }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .navbar-nav li.nav-item a {
-    font-size: 16px;
-  }
+    /* Header */
+    .header {
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    font-weight: 700; /* Bold */
+    }
+    
+    .logo {
+    margin-right: 5px; /* Jarak antara logo dan teks */
+    width: 80px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto; /* Mempertahankan rasio aspek */
+    }
 
-  .nav-link {
-    margin: 0 5px;
-    font-size: 16px;
-  }
+    .vertical-text {
+      font-size: 16px;
+    }
+
+    /* Navbar Section */
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 97, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      width: 1.75em; /* Perbesar ukuran ikon */
+      height: 1.75em; /* Perbesar ukuran ikon */
+    }
+
+    .navbar-toggler {
+      border: none !important;
+    }
+
+    /* Menu yang muncul saat diklik */
+    .navbar-collapse {
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: fixed;
+      top: 0;
+      left: -100%; /* Mulai dari luar layar sebelah kiri */
+      width: 60%; /* Lebar menu */
+      height: 100vh;
+      background-color: #ffffff; /* Background navy */
+      transition: left 0.3s ease-in-out;
+      z-index: 1000;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Shadow untuk efek depth */
+    }
+
+    /* Menu aktif (muncul) */
+    .navbar-collapse.show {
+      left: 0; /* Geser ke dalam layar */
+    }
+    
+    /* Footer Section */
+    footer h5 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      margin-top: 10px;
+    }
 }

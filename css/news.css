@@ -228,3 +228,108 @@
 .pagination button:hover {
     background-color: #f1f1f1;
 }
+
+@media (max-width: 768px) {
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 20px; /* Padding atas dikurangi */
+    }
+
+    .modal-content {
+        background-color: #ffffff;
+        margin: 5% auto;
+        padding: 20px; /* Padding dikurangi */
+        border: none;
+        width: 90%; /* Lebar modal diperbesar */
+        max-width: 100%; /* Maksimum lebar 100% */
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .modal-date {
+        font-size: 14px; /* Ukuran font diperkecil */
+        color: #666;
+        text-align: left;
+        margin-bottom: 10px; /* Jarak bawah */
+    }
+
+    .modal-content h2 {
+        font-size: 1.5em; /* Ukuran font diperkecil */
+        font-weight: bold;
+        margin-bottom: 15px; /* Jarak bawah */
+        padding-right: 40px; /* Beri ruang untuk tombol close */
+    }
+
+    .modal-image {
+        width: 100%;
+        height: 200px; /* Tinggi gambar dikurangi */
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 15px 0; /* Jarak atas dan bawah */
+    }
+
+    .modal-content p {
+        text-align: justify;
+        line-height: 1.6; /* Line height disesuaikan */
+        margin-bottom: 15px; /* Jarak bawah */
+        font-size: 14px; /* Ukuran font diperkecil */
+    }
+
+    .modal-footer {
+        display: flex;
+        align-items: center; /* Tengahkan vertikal */
+        gap: 10px; /* Jarak antara logo dan teks */
+        margin-top: 15px; /* Jarak atas */
+        padding-top: 15px; /* Padding atas */
+        border-top: 1px solid #000061;
+    }
+
+    .modal-logo {
+        width: 60px; /* Ukuran logo diperkecil */
+        height: auto;
+    }
+
+    .modal-contact {
+        flex: 1;
+    }
+
+    .modal-contact p {
+        line-height: 1.4; /* Line height disesuaikan */
+        margin: 0; /* Hilangkan margin */
+        font-size: 12px; /* Ukuran font diperkecil */
+    }
+
+    .close {
+        position: absolute;
+        top: 15px; /* Posisi atas disesuaikan */
+        right: 15px; /* Posisi kanan disesuaikan */
+        font-size: 24px; /* Ukuran font diperkecil */
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        background-color: #000061;
+        border-radius: 50%;
+        width: 30px; /* Ukuran diperkecil */
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px; /* Pusatkan ikon */
+    }
+
+    .close:hover {
+        background-color: #FB0E06;
+        color: white;
+    }
+}

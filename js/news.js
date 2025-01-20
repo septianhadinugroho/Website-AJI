@@ -140,3 +140,14 @@ function closeModal() {
 // Initial Render
 renderNews(sortedNewsData.slice(0, itemsPerPage));
 updatePaginationButtons();
+
+// Burger Menu
+document.addEventListener('click', function (event) {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+  
+    // Jika yang diklik bukan navbar-toggler atau anaknya, dan menu sedang terbuka
+    if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target) && navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show'); // Tutup menu
+    }
+  });

@@ -23,7 +23,7 @@ const projects = [
     },
     {
         title: "Manggarai DDT Project",
-        images: ["assets/page3.jpg", "assets/page1.jpg", "assets/page2.jpg"],
+        images: ["assets/signature-ddt1.jpg", "assets/signature-ddt2.jpg", "assets/signature-ddt3.jpg"],
         longDesc: "In the Manggarai-Jatinegara railway facility development project (Package A) Phase II, PT. Aneka Jaringan Indonesia successfully completed the Main Line II work with a diameter of 1200 mm, despite being located in the heart of a densely populated urban area. Facing challenges such as difficult equipment mobilization and a densely populated environment around the project site, PT. Aneka Jaringan Indonesia managed to overcome all obstacles. The expertise and precision of the AJI team ensured that this foundation work was completed on time and met all standards, supporting the smooth development of transportation infrastructure in Jakarta.",
         info: {
             client: "PT. Waskita Karya (Persero) Tbk",

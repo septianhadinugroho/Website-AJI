@@ -81,12 +81,12 @@
 
             <!-- Konten Teks -->
             <div class="container">
-                <h2 id="welcome-text" style="font-size:25px; justify-content: center;"></h2>
+                <h2 id="welcome-text"></h2>
                 <a href="index.html">
                     <img src="assets/logo.png" alt="Logo Tengah" class="logo-tengah">
                 </a>
-                <h1 id="company-name" style="font-size:50px; font-weight: 700; justify-content: center;"></h1>
-                <p id="tagline" style="font-size:30px; justify-content: center;"></p>
+                <h1 id="company-name"></h1>
+                <p id="tagline"></p>
               
                 <!-- Tombol untuk melanjutkan ke bawah -->
                 <a href="#services" class="btn-scroll-down">
@@ -136,14 +136,13 @@
                 <div class="card-service">
                     <img src="assets/wall.jpg" alt="Diaphragm Wall" style="height: 200px">
                     <h2>Drilling For Geothermal</h2>
-                    <p>Involves drilling boreholes for geothermal energy systems....</p>
+                    <p>Drilling for geothermal applications refers to the process of using drilling equipment...</p>
                     <a href="drilling-geo.html"><button>Read More</button></a>                </div>
             </div>
 
-            <button class="nav-service prev-service">&#8249;</button>
-            <button class="nav-service next-service">&#8250;</button>
+            <button class="nav-service prev-service">&#8249;&#8249;</button>
+            <button class="nav-service next-service">&#8250;&#8250;</button>
         </div>
-
     </section>
 
     <!-- Why Choose Us Section -->
@@ -190,7 +189,7 @@
 
     <!-- Our Clients Section -->
     <div>
-        <h1 class="chooseUsH1">OUR CLIENTS</h1>
+        <h1 class="ourClient">OUR CLIENTS</h1>
     </div>
 
     <div class="sliderClient">
@@ -343,6 +342,17 @@
         typeText(welcomeText, "WELCOME TO", 100); // Teks pertama
         typeText(companyName, "ANEKA JARINGAN INDONESIA", 100, 1200); // Teks kedua, delay 1.2 detik
         typeText(tagline, "We Build Quality and Integrity", 100, 3000); // Teks ketiga, delay 3 detik
+
+        // Burger Menu
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+          
+            // Jika yang diklik bukan navbar-toggler atau anaknya, dan menu sedang terbuka
+            if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target) && navbarCollapse.classList.contains('show')) {
+              navbarCollapse.classList.remove('show'); // Tutup menu
+            }
+          });
     </script>
 
     <!-- Bootstrap JS and Dependencies -->

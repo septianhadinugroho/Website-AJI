@@ -7,9 +7,9 @@ let currentIndex = 0;
 
 // Fungsi untuk memperbarui carousel
 function updateCarousel() {
-  const totalCards = cards.length;
-  const offset = -currentIndex * (100 / totalCards);
-  carousel.style.transform = `translateX(${offset}%)`;
+  const cardWidth = cards[0].clientWidth; // Ambil lebar card
+  const offset = -currentIndex * cardWidth; // Hitung offset berdasarkan lebar card
+  carousel.style.transform = `translateX(${offset}px)`; // Geser carousel
 
   // Mengatur kelas aktif untuk card
   cards.forEach((card, index) => {
