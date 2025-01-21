@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -163,35 +163,37 @@
 <div class="container my-7">
   <div class="row align-items-start">
     <!-- Kolom Kiri -->
-    <div class="col-md-4 left-column">
-      <div class="mission-heading">
-        <h3 class="mission-title">Mission</h3>
-        <h4 class="mission-subtitle">COMPANY MISSION</h4>
+    <div class="col-md-12">
+      <!-- Mission Section -->
+      <div class="d-flex align-items-start flex-wrap mission-vision-item">
+        <div class="left-title">
+          <h3 class="mission-title">Mission</h3>
+          <h4 class="mission-subtitle">COMPANY MISSION</h4>
+        </div>
+        <div class="right-description">
+          <p>
+            Our mission is to deliver exceptional foundation construction projects that meet client needs and budgets. 
+            Using innovative technologies, efficient practices, and expertise, we provide optimal solutions while 
+            adhering to local and international standards. By fostering partnerships and prioritizing quality, 
+            we aim to lead the industry in reliability, value, and sustainable growth.
+          </p>
+        </div>
       </div>
-      <div class="vision-heading">
-        <h3 class="vision-title">Vision</h3>
-        <h4 class="vision-subtitle">COMPANY VISION</h4>
-      </div>
-    </div>
-
-    <!-- Kolom Kanan -->
-    <div class="col-md-8 right-column">
-      <div class="mission-description">
-        <p>
-          Our mission is to deliver exceptional foundation construction projects that meet client needs and budgets. 
-          Using innovative technologies, efficient practices, and expertise, we provide optimal solutions while 
-          adhering to local and international standards. By fostering partnerships and prioritizing quality, 
-          we aim to lead the industry in reliability, value, and sustainable growth.
-        </p>
-      </div>
-      <div class="vision-description">
-        <p>
-          Our vision is to lead Indonesia’s foundation construction industry by consistently delivering reliable, 
-          efficient, and high-quality projects that meet international standards. Through innovation, advanced 
-          technologies, and sustainable practices, we aim to set industry benchmarks, contribute to infrastructure 
-          development, and become the preferred choice for clients, prioritizing safety, quality, and excellence in 
-          every project.
-        </p>
+      <!-- Vision Section -->
+      <div class="d-flex align-items-start flex-wrap mission-vision-item">
+        <div class="left-title">
+          <h3 class="vision-title">Vision</h3>
+          <h4 class="vision-subtitle">COMPANY VISION</h4>
+        </div>
+        <div class="right-description">
+          <p>
+            Our vision is to lead Indonesia’s foundation construction industry by consistently delivering reliable, 
+            efficient, and high-quality projects that meet international standards. Through innovation, advanced 
+            technologies, and sustainable practices, we aim to set industry benchmarks, contribute to infrastructure 
+            development, and become the preferred choice for clients, prioritizing safety, quality, and excellence in 
+            every project.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -217,7 +219,7 @@
 
 <!-- Certificate Section -->
 <div class="certificate-section">
-  <div style="text-align: center; margin-top: 50px;">
+  <div style="text-align: center; margin-top: 30px;">
     <h2 style="color: #000061; font-weight: bold;">OUR CERTIFICATES & REWARDS</h2>
   </div>
 
@@ -227,20 +229,26 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="row g-0 justify-content-center">
-          <div class="col-md-2">
+          <!-- Desktop: 5 sertifikat per slide -->
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif1.jpg" alt="Certificate 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif1.jpg')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif2.jpg" alt="Certificate 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif2.jpg')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif3.png" alt="Certificate 3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif3.png')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif4.png" alt="Certificate 4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif4.png')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif5.png" alt="Certificate 5" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif5.png')" />
+          </div>
+
+          <!-- Mobile: 1 sertifikat per slide -->
+          <div class="col-12 d-block d-md-none">
+            <img src="assets/about-sertif1.jpg" alt="Certificate 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif1.jpg')" />
           </div>
         </div>
       </div>
@@ -248,20 +256,26 @@
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="row g-0 justify-content-center">
-          <div class="col-md-2">
+          <!-- Desktop: 5 sertifikat per slide -->
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif1.jpg" alt="Certificate 6" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif1.jpg')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif2.jpg" alt="Certificate 7" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif2.jpg')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif3.png" alt="Certificate 8" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif3.png')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif4.png" alt="Certificate 9" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif4.png')" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-md-block">
             <img src="assets/about-sertif5.png" alt="Certificate 10" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif5.png')" />
+          </div>
+
+          <!-- Mobile: 1 sertifikat per slide -->
+          <div class="col-12 d-block d-md-none">
+            <img src="assets/about-sertif2.jpg" alt="Certificate 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#certificateModal" onclick="showCertificate('assets/about-sertif2.jpg')" />
           </div>
         </div>
       </div>
@@ -373,6 +387,14 @@
         if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target) && navbarCollapse.classList.contains('show')) {
           navbarCollapse.classList.remove('show'); // Tutup menu
         }
+      });
+
+      // Responsive Mobile
+      document.addEventListener("DOMContentLoaded", function() {
+        const carousel = new bootstrap.Carousel(document.getElementById('certificateCarousel'), {
+          interval: 3000, // Interval slide
+          wrap: true // Loop slide
+        });
       });
     </script>
 
