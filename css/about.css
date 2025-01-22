@@ -210,7 +210,7 @@
 /* Vision and Mission Container */
 .container.my-7 {
   max-width: 1400px; /* Lebar maksimal container */
-  padding-bottom: 2rem; /* Padding bawah diperbesar */
+  padding-bottom: 1rem; /* Padding bawah diperbesar */
   padding-top: 2rem; /* Padding atas diperbesar */
 }
 
@@ -265,17 +265,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   flex-wrap: wrap;
 }
 
 .left-title {
-  flex: 0 0 30%; 
+  flex: 0 0 30%;
   max-width: 30%;
 }
 
 .right-description {
-  flex: 1 1 65%; 
+  flex: 1 1 65%;
   max-width: 65%;
   font-size: 20px;
   text-align: justify;
@@ -338,8 +338,6 @@
 }
 
 /* Certificate Section */
-
-
 #certificateCarousel .carousel-item img {
   width: 100%; /* Lebar gambar 100% dari container */
   height: auto; /* Menjaga rasio aspek */
@@ -429,6 +427,7 @@
 
   .introduction-section .description p {
     padding-right: 0; /* Hilangkan padding kanan */
+    font-size: 15px;
   }
 
   .introduction-section .square-img {
@@ -476,7 +475,7 @@
   .timeline-circle span {
     color: white; /* Warna teks di circle */
     font-weight: bold;
-    font-size: 14px; /* Ukuran teks */
+    font-size: 15px; /* Ukuran teks */
   }
 
   /* Garis pendek di antara circle */
@@ -522,11 +521,27 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    gap: 0.5rem;
   }
 
   .left-title {
     text-align: left;
+  }
+
+  .mission-title .vision-title {
+    font-size: 15px;
+  }
+
+  .mission-subtitle .vision-subtitle {
+    font-size: 20px;
+  }
+
+  .right-description {
+    font-size: 15px;
+  }
+
+  .container.my-7 {
+    padding-bottom: 2rem; /* Padding bawah diperbesar */
+    padding-top: 2rem; /* Padding atas diperbesar */
   }
 
   .quote-section {
@@ -535,38 +550,51 @@
   }
 
   .quote-text .quoteh2 {
-    font-size: 16px; /* Ukuran font lebih kecil */
+    font-size: 15px; /* Ukuran font lebih kecil */
   }
 
   .certificate-section h2 {
     font-size: 25px; /* Ukuran font diperbesar */
+    margin-bottom: 20px; /* Jarak bawah */
   }
-  
+
   #certificateCarousel .carousel-item img {
-    width: 100%; /* Lebar gambar 100% dari container */
-    height: auto; /* Tinggi gambar diperbesar */
+    width: 100%; /* Gambar memenuhi lebar container */
+    max-height: 400px; /* Tinggi gambar diperbesar */
     object-fit: contain; /* Pastikan gambar tidak terpotong */
     margin: 0 auto; /* Pusatkan gambar */
     border-radius: 10px; /* Sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek shadow */
+    padding: 0; /* Hilangkan padding */
   }
-  
+
   .carousel-control-prev,
   .carousel-control-next {
-    width: 50px; /* Lebar tombol diperbesar */
-    height: 50px; /* Tinggi tombol diperbesar */
+    width: 40px; /* Lebar tombol */
+    height: 40px; /* Tinggi tombol */
     background-color: #000061; /* Warna biru */
     border-radius: 50%; /* Bentuk bulat */
     top: 50%; /* Posisi vertikal di tengah */
     transform: translateY(-50%); /* Geser ke atas setengah tinggi */
     opacity: 0.8; /* Sedikit transparan */
   }
-  
+
   .carousel-control-prev {
-    left: 35px; /* Posisi tombol previous lebih ke kiri */
+    left: 10px; /* Posisi tombol previous lebih ke kiri */
   }
-  
+
   .carousel-control-next {
-    right: 35px; /* Posisi tombol next lebih ke kanan */
+    right: 10px; /* Posisi tombol next lebih ke kanan */
+  }
+
+  .carousel {
+    padding: 0; /* Hilangkan padding kiri dan kanan */
+  }
+
+  .carousel-inner {
+    padding: 0; /* Hilangkan padding di dalam carousel */
+  }
+
+  .carousel-item {
+    padding: 0; /* Hilangkan padding di setiap item carousel */
   }
 }

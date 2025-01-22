@@ -212,3 +212,103 @@
     color: #6c757d;
     cursor: not-allowed;
 }
+
+/* Mobile Styles */
+@media (max-width: 767.98px) {
+    /* Signature Project Section */
+    .container.my-4 h2 {
+        font-size: 30px; /* Ukuran judul lebih kecil */
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-top: -15px;
+        margin-bottom: -10px;
+    }
+
+    /* Project Grid */
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 project per row */
+        gap: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-card {
+        height: auto; /* Tinggi otomatis */
+    }
+
+    .project-image {
+        height: 200px; /* Tinggi gambar lebih kecil */
+    }
+
+    .project-details h3 {
+        font-size: 1.2rem; /* Judul lebih kecil */
+    }
+
+    .project-info {
+        font-size: 0.9rem; /* Deskripsi lebih kecil */
+    }
+
+    /* Modal Styling for Mobile */
+    .modal-content {
+        max-width: 90%;
+        max-height: 90vh;
+        padding: 15px;
+    }
+
+    .modal-grid {
+        grid-template-columns: 1fr; /* Gambar dan teks satu kolom */
+        gap: 10px;
+    }
+
+    .modal-image-container {
+        height: 450px; /* Tinggi gambar lebih kecil */
+    }
+
+    #modalTitle {
+        font-size: 1.5rem; /* Judul lebih kecil */
+        margin-top: 10px;
+    }
+
+    #modalInfo {
+        font-size: 1rem; /* Teks lebih kecil */
+    }
+
+    .close-modal {
+        top: 5px;
+        right: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .read-more-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .pagination-container {
+        padding: 15px 0; /* Padding lebih kecil */
+    }
+
+    .pagination {
+        gap: 5px; /* Jarak antar tombol lebih kecil */
+    }
+
+    .pagination button {
+        padding: 8px 12px; /* Ukuran tombol lebih kecil */
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    /* Tombol "Prev" dan "Next" diatur agar tidak terlalu lebar */
+    .pagination button#prevBtn,
+    .pagination button#nextBtn {
+        padding: 8px 10px; /* Padding lebih kecil */
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    /* Tombol halaman (angka) diatur agar tidak terlalu lebar */
+    .pagination .page-btn {
+        min-width: 30px; /* Lebar minimal untuk tombol angka */
+        padding: 8px 10px; /* Padding lebih kecil */
+    }
+}
