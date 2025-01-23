@@ -1,36 +1,117 @@
-// Slider Together for Change Section
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+// Slider untuk "Together We Build Tomorrow"
+const carouselTrack = document.querySelector('.carousel-track');
+let carouselIndex = 0;
 
-function showSlide(index) {
-    const sliderTrack = document.querySelector('.slider-track');
+function slideCarousel() {
+    carouselIndex++;
+    if (carouselIndex >= carouselTrack.children.length) {
+        carouselIndex = 0;
+    }
+    carouselTrack.style.transform = `translateX(-${carouselIndex * 100}%)`;
+}
 
-    // Geser slider-track berdasarkan indeks slide
-    sliderTrack.style.transform = `translateX(-${index * 20}%)`;
+setInterval(slideCarousel, 3000); // Geser setiap 3 detik
 
-    // Atur ulang posisi dan skala slide untuk efek tumpukan
-    slides.forEach((slide, i) => {
-        const offset = i - index;
-        const scale = 1 - Math.abs(offset) * 0.1; // Skala slide
-        const opacity = 1 - Math.abs(offset) * 0.3; // Opasitas slide
-        const translateX = offset * 50; // Geser slide ke kiri/kanan
+// Slider untuk "TOGETHER FOR CHANGE"
+const sliderTrack = document.querySelector('.slider-track');
+let sliderIndex = 0;
 
-        slide.style.transform = `translateX(${translateX}%) scale(${scale})`;
-        slide.style.opacity = opacity;
-        slide.style.zIndex = totalSlides - Math.abs(offset); // Atur z-index
+function slideTogetherForChange() {
+    sliderIndex++;
+    if (sliderIndex >= sliderTrack.children.length) {
+        sliderIndex = 0;
+    }
+    sliderTrack.style.transform = `translateX(-${sliderIndex * 100}%)`;
+}
+
+setInterval(slideTogetherForChange, 3000); // Geser setiap 3 detik
+
+// Slider untuk "VOICES OF ANEKA INSIDERS"
+let slideTimer;
+const carouselVoice = document.getElementById('carouselvoice');
+const carouselVoiceItems = document.querySelectorAll('.testimonial');
+const totalItems = carouselVoiceItems.length;
+const itemWidth = carouselVoiceItems[0].offsetWidth + 20; // 20 adalah margin-right
+
+function scrollCarouselVoice() {
+    let scrollAmount = 0;
+    slideTimer = setInterval(() => {
+        carouselVoice.scrollLeft += 2; // Kecepatan scroll
+        scrollAmount += 2;
+        if (scrollAmount >= itemWidth * totalItems / 2) {
+            carouselVoice.scrollLeft = 0;
+            scrollAmount = 0;
+        }
+    }, 20); // Interval waktu untuk smooth scroll
+}
+
+scrollCarouselVoice();
+
+// Menghentikan animasi saat hover atau klik
+carouselVoice.addEventListener('mouseover', () => {
+    clearInterval(slideTimer);
+});
+
+carouselVoice.addEventListener('mouseout', () => {
+    scrollCarouselVoice();
+});
+
+// Menghentikan animasi saat gambar diklik
+carouselVoiceItems.forEach(item => {
+    item.addEventListener('click', () => {
+        clearInterval(slideTimer);
     });
+});
+
+// JavaScript untuk Modals Testimonial
+function openModal(modalId) {
+    clearInterval(slideTimer); // Menghentikan animasi saat modal dibuka
+    document.getElementById(modalId).style.display = 'flex';
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+    scrollCarouselVoice(); // Memulai kembali animasi saat modal ditutup
 }
 
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
+window.onclick = function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            scrollCarouselVoice(); // Memulai kembali animasi saat modal ditutup
+        }
+    });
+};
+
+// JavaScript untuk Apply Modal
+function openApplyModal() {
+    document.getElementById("applyModal").style.display = "block";
 }
 
-// Otomatis geser slider setiap 5 detik
-setInterval(nextSlide, 5000);
+function closeApplyModal() {
+    document.getElementById("applyModal").style.display = "none";
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById("applyModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+// JavaScript untuk Apply Modal
+function openApplyModal() {
+    document.getElementById("applyModal").style.display = "block";
+}
+
+function closeApplyModal() {
+    document.getElementById("applyModal").style.display = "none";
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById("applyModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};

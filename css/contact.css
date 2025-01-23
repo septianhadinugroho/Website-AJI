@@ -149,33 +149,72 @@
     border-color: red; /* Border merah saat hover */
 }
 
-@media all and (max-width: 1024px) {
+@media (max-width: 767.98px) {
     .containercontact {
-        width: auto;
-        padding: 30px;
-    }
-    .col-1 {
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .contentcontact {
-        display: block;
-    }
-    .col-2 {
-        margin-top: 40px;
-    }
-}
-
-@media all and (max-width: 500px) {
-    .containercontact {
+        width: 90%;
         padding: 20px;
+        margin: 40px auto;
     }
+
     .text-centercontact h1 {
-        font-size: 2em;
+        font-size: 1.7em; /* Ukuran judul diperkecil */
+        margin-bottom: 15px;
     }
+
     .text-centercontact p {
-        font-size: 1em;
+        font-size: 1em; /* Ukuran teks diperkecil */
+        margin-bottom: 20px;
+    }
+
+    .contentcontact {
+        display: flex;
+        flex-direction: column; /* Menumpuk kolom secara vertikal */
+        gap: 20px; /* Jarak antar elemen diperkecil */
+        margin-top: 20px;
+    }
+
+    .col-1, .col-2 {
+        width: 100%; /* Lebar penuh untuk layar kecil */
+        padding: 15px; /* Padding diperkecil */
+    }
+
+    .icon {
+        width: 60px; /* Ukuran ikon diperkecil */
+        height: 60px;
+        font-size: 24px; /* Ukuran font ikon diperkecil */
+        padding: 15px; /* Padding ikon diperkecil */
+    }
+
+    .contact-info {
+        padding: 4px 10px 0px 10px; /* Padding info kontak diperkecil */
+    }
+
+    .address-line {
+        flex-direction: row; /* Tetap horizontal untuk ikon dan teks */
+        align-items: center;
+        margin-top: 10px; /* Margin atas diperkecil */
+    }
+
+    .map-container {
+        margin-top: 15px; /* Margin atas diperkecil */
+    }
+
+    .form-containercontact {
+        padding: 15px; /* Padding form diperkecil */
+    }
+
+    .form-row {
+        padding-bottom: 15px; /* Padding bawah form diperkecil */
+    }
+
+    .form-field {
+        padding: 8px 0; /* Padding input form diperkecil */
+        font-size: 0.9em; /* Ukuran font input diperkecil */
+    }
+
+    .send-btn {
+        padding: 8px 20px; /* Padding tombol diperkecil */
+        font-size: 14px; /* Ukuran font tombol diperkecil */
+        margin-top: 15px; /* Margin atas tombol diperkecil */
     }
 }

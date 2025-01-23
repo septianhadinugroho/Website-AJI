@@ -13,18 +13,19 @@
     display: flex;
     transition: transform 0.5s ease;
     height: 100%;
+    width: 100%; /* Pastikan lebar track sesuai dengan container */
 }
 
-.carousel img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover; /* Mengisi seluruh tinggi dan lebar */
-    flex-shrink: 0;
+.carousel-track img {
+    width: 100%; /* Gambar mengisi lebar penuh */
+    height: 100vh; /* Gambar mengisi tinggi penuh */
+    object-fit: cover; /* Gambar akan di-crop agar sesuai dengan area */
+    flex-shrink: 0; /* Gambar tidak akan menyusut */
 }
 
 .carousel-text {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -43,7 +44,7 @@
 
 .exploreButton {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
@@ -402,4 +403,83 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+    /* Carousel Background */
+    .carousel-background {
+        height: 95vh; /* Tinggi carousel disesuaikan untuk mobile */
+    }
+
+    .carousel-track img {
+        height: 95vh; /* Gambar mengisi tinggi carousel di mobile */
+    }
+
+    /* Teks di tengah carousel */
+    .carousel-text {
+        font-size: 35px; /* Ukuran teks lebih kecil untuk mobile */
+        top: 40%; /* Posisi teks diatur lebih ke atas */
+        width: 90%; /* Lebar teks disesuaikan agar tidak melebar */
+        text-align: center; /* Teks rata tengah */
+        line-height: 1.2; /* Jarak antar baris diperkecil */
+    }
+
+    /* Tombol Explore */
+    .exploreButton {
+        top: 50%; /* Posisi tombol diatur lebih ke bawah */
+        font-size: 16px; /* Ukuran font lebih kecil */
+        padding: 8px 30px; /* Padding diperkecil */
+        white-space: nowrap; /* Teks tombol tidak terpotong */
+    }
+
+    /* Application Section */
+    .application-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 1px;
+    }
+
+    /* Ways of Working Section */
+    .content2Bg {
+        padding: 20px 0;
+    }
+
+    .applicationwork-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardwork {
+        width: 80%;
+        margin-bottom: 1px;
+    }
+
+    /* Together for Change Section */
+    #slider {
+        height: 50vw; /* Sesuaikan tinggi slider */
+    }
+
+    /* Discover Your Path Section */
+    .content-containerlistwork {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-containerlistwork img {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .descriptionlistwork {
+        text-align: left;
+    }
+
+    .applyButton {
+        width: 100%;
+        padding: 10px 0;
+    }
 }

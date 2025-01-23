@@ -1,384 +1,339 @@
-<!DOCTYPE html>
-<html lang="id">
+    <!DOCTYPE html>
+    <html lang="id">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career | PT. Aneka Jaringan Indonesia</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Career | PT. Aneka Jaringan Indonesia</title>
 
-    <!-- Icon Web -->
-    <link rel="shortcut icon" href="assets/logo-ico.ico" type="image/x-icon">
+        <!-- Icon Web -->
+        <link rel="shortcut icon" href="assets/logo-ico.ico" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/career.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/career.css" />
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
 
-<body>
-    <!-- Header dan Hero di dalam satu kontainer -->
-    <div class="header-hero-wrapper">
-        <header class="navbar navbar-expand-lg navbar-dark">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="header">
-                    <a href="index.html">
-                        <img src="assets/logo.png" alt="Logo" class="logo">
-                    </a>
-                    <div class="vertical-text">
-                        <span>ANEKA</span>
-                        <span>JARINGAN</span>
-                        <span>INDONESIA</span>
+    <body>
+        <!-- Header dan Hero di dalam satu kontainer -->
+        <div class="header-hero-wrapper">
+            <header class="navbar navbar-expand-lg navbar-dark">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="header">
+                        <a href="index.html">
+                            <img src="assets/logo.png" alt="Logo" class="logo">
+                        </a>
+                        <div class="vertical-text">
+                            <span>ANEKA</span>
+                            <span>JARINGAN</span>
+                            <span>INDONESIA</span>
+                        </div>
                     </div>
+
+                    <nav>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="signature-project.html">Signature Projects</a></li>
+                                <li><a class="dropdown-item" href="ongoing-project.html">Ongoing Projects</a></li>
+                                <li><a class="dropdown-item" href="finished-project.html">Finished Projects</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                            <li class="nav-item"><a href="career.html" class="nav-link active" class="nav-link">Career</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                        </div>
+                    </nav>
                 </div>
+            </header>
 
-                <nav>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="signature-project.html">Signature Projects</a></li>
-                            <li><a class="dropdown-item" href="ongoing-project.html">Ongoing Projects</a></li>
-                            <li><a class="dropdown-item" href="finished-project.html">Finished Projects</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-                        <li class="nav-item"><a href="career.html" class="nav-link active" class="nav-link">Career</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                      </ul>
-                    </div>
-                  </nav>
+        <!-- Carousel Background -->
+        <div class="carousel-background">
+            <div class="carousel-track">
+                <img src="assets/crc1.jpg" alt="Foto 1">
+                <img src="assets/crc2.jpg" alt="Foto 2">
+                <img src="assets/crc3.jpg" alt="Foto 3">
             </div>
-        </header>
 
-    <!-- Carousel Background -->
-    <div class="carousel-background">
-        <div class="carousel-track">
-            <img src="assets/crc1.jpg" alt="Foto 1">
-            <img src="assets/crc2.jpg" alt="Foto 2">
-            <img src="assets/crc3.jpg" alt="Foto 3">
+            <!-- Text in the center of the carousel -->
+            <div class="carousel-text">Together We Build Tomorrow</div>
+            <a href="#exploreTo" id="explore" class="exploreButton">Explore</a>
         </div>
 
-        <!-- Text in the center of the carousel -->
-        <div class="carousel-text">Together We Build Tomorrow</div>
-        <a href="#exploreTo" id="explore" class="exploreButton">Explore</a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="content">
-        <h5 style="color: black; padding-top: 10px;" id="exploreTo">WHY YOU SHOULD</h5>
-        <h1 style="color: black; font-weight: bold;">JOIN OUR ADVENTURE</h1>
-    </div>
-
-<!-- Application Section -->
-<section id="application">
-    <div class="application-cards">
-        <div class="card">
-            <i class="fas fa-users fa-3x" style="color: navy;"></i>
-            <h4>Company<br>Culture</h4>
-            <p>Our values of integrity, respect, and teamwork create an environment where everyone can thrive. We celebrate diversity and foster inclusivity, ensuring that every voice is heard and valued.</p>
+        <!-- Main Content -->
+        <div class="content">
+            <h5 style="color: black; padding-top: 10px;" id="exploreTo">WHY YOU SHOULD</h5>
+            <h1 style="color: black; font-weight: bold;">JOIN OUR ADVENTURE</h1>
         </div>
-        <div class="card">
-            <i class="fas fa-chart-line fa-3x" style="color: navy;"></i>
-            <h4>Growth Opportunities</h4>
-            <p>We are committed to your professional development. With access to training programs, mentorship, and continuous learning opportunities, you can advance your skills and grow your career with us.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-home fa-3x" style="color: navy;"></i>
-            <h4>Family-Oriented Environment</h4>
-            <p>We believe in fostering a family-like atmosphere. Our team supports one another through challenges and celebrates successes together, creating bonds that go beyond the workplace.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-futbol fa-3x" style="color: navy;"></i>
-            <h4>Weekly Sports Activities</h4>
-            <p>Stay active and build camaraderie with our weekly sports activities! Whether it's badminton, or group workouts, these activities help us bond and promote a healthy lifestyle.</p>
-        </div>
-    </div>
-</section>
 
-    <!-- JavaScript for Autoplay Carousel -->
-    <script>
-        const track = document.querySelector('.carousel-track');
-        let index = 0;
-
-        function slideCarousel() {
-            index++;
-            if (index >= track.children.length) {
-                index = 0;
-            }
-            track.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        setInterval(slideCarousel, 3000); // Move every 3 seconds
-    </script>
-
-    <!-- Ways of Working Section -->
-    <div class="content2Bg">
-        <h1 style="text-align: center; font-weight: bold; padding-top: 40px;">OUR WAYS OF WORKING</h1>
-        <p style="text-align: center;">At PT. AJI, we foster a collaborative and dynamic work environment. Our approach to work ensures that everyone can contribute and succeed</p>
-        <div class="applicationwork-cards">
-            <div class="cardwork">
-                <img src="assets/team.png" alt="Teamwork and Collaboration">
-                <h4 style="font-weight: bold">TEAMWORK AND COLLABORATION</h4>
-                <p>We embrace Agile methodologies that encourage collaboration and adaptability. Our teams work closely together, sharing ideas and feedback to drive projects forward.</p>
+    <!-- Application Section -->
+    <section id="application">
+        <div class="application-cards">
+            <div class="card">
+                <i class="fas fa-users fa-3x" style="color: navy;"></i>
+                <h4>Company<br>Culture</h4>
+                <p>Our values of integrity, respect, and teamwork create an environment where everyone can thrive. We celebrate diversity and foster inclusivity, ensuring that every voice is heard and valued.</p>
             </div>
-            <div class="cardwork">
-                <img src="assets/digital.png" alt="Tools and Technologies">
-                <h4 style="font-weight: bold">TOOLS AND TECHNOLOGIES</h4>
-                <p>Our employees have access to cutting-edge tools and technologies that streamline processes and enhance productivity. We ensure you have what you need to succeed.</p>
+            <div class="card">
+                <i class="fas fa-chart-line fa-3x" style="color: navy;"></i>
+                <h4>Growth Opportunities</h4>
+                <p>We are committed to your professional development. With access to training programs, mentorship, and continuous learning opportunities, you can advance your skills and grow your career with us.</p>
             </div>
-            <div class="cardwork">
-                <img src="assets/feedback.png" alt="Feedback and Recognition">
-                <h4 style="font-weight: bold">FEEDBACK AND RECOGNITION</h4>
-                <p>We value continuous improvement through feedback, using regular check-ins and reviews to celebrate achievements and support growth in a culture of appreciation.</p>
+            <div class="card">
+                <i class="fas fa-home fa-3x" style="color: navy;"></i>
+                <h4>Family-Oriented Environment</h4>
+                <p>We believe in fostering a family-like atmosphere. Our team supports one another through challenges and celebrates successes together, creating bonds that go beyond the workplace.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-futbol fa-3x" style="color: navy;"></i>
+                <h4>Weekly Sports Activities</h4>
+                <p>Stay active and build camaraderie with our weekly sports activities! Whether it's badminton, or group workouts, these activities help us bond and promote a healthy lifestyle.</p>
             </div>
         </div>
-    </div>
-
-    <!-- Together for Change Section -->
-    <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 40px;">TOGETHER FOR CHANGE</h1>
-    <p style="text-align: center;">Let's take a look our society in action</p>
-
-    <!-- Slider Section -->
-    <section id="slider">
-        <input type="radio" name="slider" id="s1">
-        <input type="radio" name="slider" id="s2">
-        <input type="radio" name="slider" id="s3" checked>
-        <input type="radio" name="slider" id="s4">
-        <input type="radio" name="slider" id="s5">
-        <label for="s1" id="slide1"></label>
-        <label for="s2" id="slide2"></label>
-        <label for="s3" id="slide3"></label>
-        <label for="s4" id="slide4"></label>
-        <label for="s5" id="slide5"></label>
     </section>
 
-    <!-- Discover Your Path Section -->
-    <div class="bgDiscover">
-        <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 50px;">DISCOVER YOUR PATH</h1>
-        <p style="text-align: center;">Ready to take the next step in your career? Check out our current job openings</p>
-        <div class="containerlistwork">
-            <div class="content-containerlistwork">
-                <img src="assets/se.png" alt="Site Engineer">
-                <div class="descriptionlistwork">
-                    <h2 style="font-size: 28px; font-weight: bold;">SITE ENGINEER</h2>
-                    <ul>
-                        <li>Candidates must possess Diploma Degree / Bachelor's degree of Civil Engineering</li>
-                        <li>Able to operate AutoCAD, Microsoft Project, Microsoft Office</li>
-                        <li>Meticulous in calculating</li>
-                        <li>Fresh graduates are welcome to apply</li>
-                        <li>Willing to be placed anywhere based on company's ongoing project and also replacement in head office (Kelapa Gading, Jakarta Utara)</li>
-                        <li>Willing to learn actively</li>
-                        <li>Able to deal with third party</li>
-                        <li>Have good communications and negotiations skill</li>
-                    </ul>
-                    <a class="applyButton" onclick="openApplyModal()">Apply</a>
+        <!-- Ways of Working Section -->
+        <div class="content2Bg">
+            <h1 style="text-align: center; font-weight: bold; padding-top: 40px;">OUR WAYS OF WORKING</h1>
+            <p style="text-align: center;">At PT. AJI, we foster a collaborative and dynamic work environment. Our approach to work ensures that everyone can contribute and succeed</p>
+            <div class="applicationwork-cards">
+                <div class="cardwork">
+                    <img src="assets/team.png" alt="Teamwork and Collaboration">
+                    <h4 style="font-weight: bold">TEAMWORK AND COLLABORATION</h4>
+                    <p>We embrace Agile methodologies that encourage collaboration and adaptability. Our teams work closely together, sharing ideas and feedback to drive projects forward.</p>
+                </div>
+                <div class="cardwork">
+                    <img src="assets/digital.png" alt="Tools and Technologies">
+                    <h4 style="font-weight: bold">TOOLS AND TECHNOLOGIES</h4>
+                    <p>Our employees have access to cutting-edge tools and technologies that streamline processes and enhance productivity. We ensure you have what you need to succeed.</p>
+                </div>
+                <div class="cardwork">
+                    <img src="assets/feedback.png" alt="Feedback and Recognition">
+                    <h4 style="font-weight: bold">FEEDBACK AND RECOGNITION</h4>
+                    <p>We value continuous improvement through feedback, using regular check-ins and reviews to celebrate achievements and support growth in a culture of appreciation.</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Apply Modal -->
-    <div id="applyModal" class="applyModal">
-        <div class="applyModal-content">
-            <span class="applyModal-close" onclick="closeApplyModal()">&times;</span>
-            <h2 style="font-weight: bold; font-size: 20px;">PLEASE SEND YOUR CV AND COVER LETTER TO</h2>
-            <br>EMAIL : ANE@PTAJI.CO.ID
-            <br>SUBJECT : NAME_POSITION
-            <p>SUBMIT BEFORE 31 OCTOBER 2024</p>
-        </div>
-    </div>
+        <!-- Together for Change Section -->
+        <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 40px;">TOGETHER FOR CHANGE</h1>
+        <p style="text-align: center;">Let's take a look our society in action</p>
 
-    <!-- JavaScript for Apply Modal -->
-    <script>
-        function openApplyModal() {
-            document.getElementById("applyModal").style.display = "block";
-        }
+        <!-- Slider Section -->
+        <section id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <label for="s1" id="slide1"></label>
+            <label for="s2" id="slide2"></label>
+            <label for="s3" id="slide3"></label>
+            <label for="s4" id="slide4"></label>
+            <label for="s5" id="slide5"></label>
+        </section>
 
-        function closeApplyModal() {
-            document.getElementById("applyModal").style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById("applyModal");
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-    <!-- Voices of Aneka Insiders Section -->
-    <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 30px;">VOICES OF ANEKA INSIDERS</h1>
-
-    <!-- CarouselVoice Container -->
-    <div class="carouselvoice" id="carouselvoice">
-        <!-- Each image opens a modal on click -->
-        <div class="testimonial" onclick="openModal('modal1')">
-            <img src="assets/pphoto1.jpg" alt="Profile 1">
-        </div>
-        <div class="testimonial" onclick="openModal('modal2')">
-            <img src="assets/pphoto2.jpg" alt="Profile 2">
-        </div>
-        <div class="testimonial" onclick="openModal('modal3')">
-            <img src="assets/pphoto3.jpg" alt="Profile 3">
-        </div>
-        <div class="testimonial" onclick="openModal('modal1')">
-            <img src="assets/pphoto4.jpg" alt="Profile 4">
-        </div>
-        <div class="testimonial" onclick="openModal('modal2')">
-            <img src="assets/pphoto5.jpg" alt="Profile 5">
-        </div>
-        <!-- Duplicate testimonials for looping effect -->
-        <div class="testimonial" onclick="openModal('modal1')">
-            <img src="assets/pphoto1.jpg" alt="Profile 1">
-        </div>
-        <div class="testimonial" onclick="openModal('modal2')">
-            <img src="assets/pphoto2.jpg" alt="Profile 2">
-        </div>
-        <div class="testimonial" onclick="openModal('modal3')">
-            <img src="assets/pphoto3.jpg" alt="Profile 3">
-        </div>
-        <div class="testimonial" onclick="openModal('modal1')">
-            <img src="assets/pphoto4.jpg" alt="Profile 4">
-        </div>
-        <div class="testimonial" onclick="openModal('modal2')">
-            <img src="assets/pphoto5.jpg" alt="Profile 5">
-        </div>
-    </div>
-
-    <!-- Modals for each testimonial -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
-            <h2>Employee Name 1</h2>
-            <p>Brief description about Employee 1 and their experience at Aneka.</p>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
-            <h2>Employee Name 2</h2>
-            <p>Brief description about Employee 2 and their experience at Aneka.</p>
-        </div>
-    </div>
-
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
-            <h2>Employee Name 3</h2>
-            <p>Brief description about Employee 3 and their experience at Aneka.</p>
-        </div>
-    </div>
-
-    <!-- JavaScript for CarouselVoice and Modals -->
-    <script>
-        // JavaScript to create a continuous scrolling effect
-        const carouselvoice = document.getElementById('carouselvoice');
-        const speed = 1; // Adjust speed of the scroll (higher number for faster scrolling)
-
-        function scrollCarouselVoice() {
-            carouselvoice.scrollLeft += speed;
-            // Reset scroll position to the beginning when reaching the end
-            if (carouselvoice.scrollLeft >= carouselvoice.scrollWidth / 2) {
-                carouselvoice.scrollLeft = 0;
-            }
-        }
-
-        // Start scrolling the carouselvoice automatically
-        let scrollInterval = setInterval(scrollCarouselVoice, 20);
-
-        // Pause the scroll when the mouse is over the carouselvoice
-        carouselvoice.addEventListener('mouseover', () => {
-            clearInterval(scrollInterval);
-        });
-
-        // Resume scrolling when the mouse leaves the carouselvoice
-        carouselvoice.addEventListener('mouseout', () => {
-            scrollInterval = setInterval(scrollCarouselVoice, 20);
-        });
-
-        // Function to open a modal
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'flex';
-        }
-
-        // Function to close a modal
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        // Close modal when clicking outside the modal content
-        window.onclick = function(event) {
-            const modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        }
-    </script>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-md-4">
-                    <h5>PT. Aneka Jaringan Indonesia</h5>
-                    <p>
-                        <a href="https://maps.app.goo.gl/7KC3bmbSrGNQVXvG6" target="_blank">
-                            Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
-                        </a>
-                    </p>
-                </div>
-
-                <!-- Contact Section -->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <li>(021) 21057940</li>
-                        <li><a href="mailto:marketing@ptaji.co.id">marketing@ptaji.co.id</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Social Media Section -->
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
-                    <div class="social-icons d-flex">
-                        <a href="https://www.facebook.com/share/19hRvG8Gd9" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/anekajaringanindonesia" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+        <!-- Discover Your Path Section -->
+        <div class="bgDiscover">
+            <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 50px;">DISCOVER YOUR PATH</h1>
+            <p style="text-align: center;">Ready to take the next step in your career? Check out our current job openings</p>
+            <div class="containerlistwork">
+                <div class="content-containerlistwork">
+                    <img src="assets/se.png" alt="Site Engineer">
+                    <div class="descriptionlistwork">
+                        <h2 style="font-size: 28px; font-weight: bold;">SITE ENGINEER</h2>
+                        <ul>
+                            <li>Candidates must possess Diploma Degree / Bachelor's degree of Civil Engineering</li>
+                            <li>Able to operate AutoCAD, Microsoft Project, Microsoft Office</li>
+                            <li>Meticulous in calculating</li>
+                            <li>Fresh graduates are welcome to apply</li>
+                            <li>Willing to be placed anywhere based on company's ongoing project and also replacement in head office (Kelapa Gading, Jakarta Utara)</li>
+                            <li>Willing to learn actively</li>
+                            <li>Able to deal with third party</li>
+                            <li>Have good communications and negotiations skill</li>
+                        </ul>
+                        <a class="applyButton" onclick="openApplyModal()">Apply</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <hr />
-
-            <!-- Copyright Section -->
-            <div class="copyright">
-                <p>&copy; 2025 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+        <!-- Apply Modal -->
+        <div id="applyModal" class="applyModal">
+            <div class="applyModal-content">
+                <span class="applyModal-close" onclick="closeApplyModal()">&times;</span>
+                <h2 style="font-weight: bold; font-size: 20px;">PLEASE SEND YOUR CV AND COVER LETTER TO</h2>
+                <br>EMAIL : ANE@PTAJI.CO.ID
+                <br>SUBJECT : NAME_POSITION
+                <p>SUBMIT BEFORE 31 OCTOBER 2024</p>
             </div>
         </div>
-    </footer>
 
-    <!-- Bootstrap JS and Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- Voices of Aneka Insiders Section -->
+        <h1 style="color: black; font-weight: bold; text-align: center; font-size: 40px; margin-top: 30px;">VOICES OF ANEKA INSIDERS</h1>
 
-</html>
+        <!-- CarouselVoice Container -->
+        <div class="carouselvoice" id="carouselvoice">
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto1.jpg" alt="Profile 1">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto2.jpg" alt="Profile 2">
+            </div>
+            <div class="testimonial" onclick="openModal('modal3')">
+                <img src="assets/pphoto3.jpg" alt="Profile 3">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto4.jpg" alt="Profile 4">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto5.jpg" alt="Profile 5">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto1.jpg" alt="Profile 1">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto2.jpg" alt="Profile 2">
+            </div>
+            <div class="testimonial" onclick="openModal('modal3')">
+                <img src="assets/pphoto3.jpg" alt="Profile 3">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto4.jpg" alt="Profile 4">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto5.jpg" alt="Profile 5">
+            </div>
+            
+            <!-- Duplicate testimonials for looping effect -->
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto1.jpg" alt="Profile 1">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto2.jpg" alt="Profile 2">
+            </div>
+            <div class="testimonial" onclick="openModal('modal3')">
+                <img src="assets/pphoto3.jpg" alt="Profile 3">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto4.jpg" alt="Profile 4">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto5.jpg" alt="Profile 5">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto1.jpg" alt="Profile 1">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto2.jpg" alt="Profile 2">
+            </div>
+            <div class="testimonial" onclick="openModal('modal3')">
+                <img src="assets/pphoto3.jpg" alt="Profile 3">
+            </div>
+            <div class="testimonial" onclick="openModal('modal1')">
+                <img src="assets/pphoto4.jpg" alt="Profile 4">
+            </div>
+            <div class="testimonial" onclick="openModal('modal2')">
+                <img src="assets/pphoto5.jpg" alt="Profile 5">
+            </div>
+        </div>
+
+        <!-- Modals for each testimonial -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+                <h2>Employee Name 1</h2>
+                <p>Brief description about Employee 1 and their experience at Aneka.</p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+                <h2>Employee Name 2</h2>
+                <p>Brief description about Employee 2 and their experience at Aneka.</p>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
+                <h2>Employee Name 3</h2>
+                <p>Brief description about Employee 3 and their experience at Aneka.</p>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-md-4">
+                        <h5>PT. Aneka Jaringan Indonesia</h5>
+                        <p>
+                            <a href="https://maps.app.goo.gl/7KC3bmbSrGNQVXvG6" target="_blank">
+                                Rukan Boulevard Selatan Blok A Nomor 51 (SCBSA51), Jalan Sedayu City Kelapa Gading, Cakung Barat, Kecamatan Cakung, Kota Jakarta Timur 13920
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li>(021) 21057940</li>
+                            <li><a href="mailto:marketing@ptaji.co.id">marketing@ptaji.co.id</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Social Media Section -->
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons d-flex">
+                            <a href="https://www.facebook.com/share/19hRvG8Gd9" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/anekajaringanindonesia" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- Copyright Section -->
+                <div class="copyright">
+                    <p>&copy; 2025 PT. Aneka Jaringan Indonesia. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and Dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/career.js"></script>
+
+    </body>
+
+    </html>
