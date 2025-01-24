@@ -278,11 +278,28 @@ section {
     margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+    /* Judul di tengah */
+    #definition h2,
+    #work-method h2,
+    #advantages-application h1 {
+        text-align: center;
+    }
+    
+    /* Judul "BORED PILE" Dinaikkan */
+    .about h1 {
+        font-size: 36px;
+        margin-top: -60px; /* Tambahkan margin-top */
+    }
+
+    /* Service Section Ditempatkan di Tengah */
     .services-container {
         flex-direction: column;
-        padding: 20px;
-        margin-top: -190px;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+        margin-top: -200px;
+        margin-bottom: 110px;
     }
 
     .service-item {
@@ -292,7 +309,7 @@ section {
     }
 
     .service-item h5 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .service-item button {
@@ -310,75 +327,82 @@ section {
         margin-bottom: 10px;
     }
 
-    .content {
-        margin-left: 0;
-        margin-top: 10px;
-        padding: 20px; /* Padding untuk mobile */
+    /* Hilangkan gambar di THE DEFINITION OF BORED PILE */
+    .definition-image {
+        display: none;
     }
 
+    /* Definisi Gambar Diatas Deskripsi dan Diperkecil */
     .definition-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     .definition-text {
-        margin-right: 0;
-        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    .definition-image {
-        max-width: 100%;
+    .definition-content h2 {
+        margin-bottom: 20px; /* Jarak antara judul dan deskripsi */
+        margin-top: 20px;
     }
 
-    .work-method-content {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Padding Kanan dan Kiri Content Didekatkan ke Ujung Layar */
+    .content {
+        padding: 25px 25px; /* Padding kanan dan kiri diperkecil */
     }
 
-    .work-method-text {
-        flex: 1;
-        margin-right: 0px;
+    /* Sub Judul WORK METHOD Rata Kiri */
+    .work-method-text,
+    .work-method2-text {
+        text-align: left; /* Teks sub judul rata kiri */
     }
 
-    .work-method-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-        max-width: 100%;
+    /* Hilangkan gambar di WORK METHOD */
+    .work-method-image,
+    .work-method2-image {
+        display: none;
     }
 
+    /* Work Method Content */
+    .work-method-content,
     .work-method2-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Rata kiri */
+        text-align: left; /* Teks rata kiri */
     }
 
-    .work-method2-text {
-        flex: 1;
-        margin-right: 0px;
-        margin-top: 30px;
-        left: 100px;
-        margin-left: -60px;
+    .work-method-text p,
+    .work-method2-text p {
+        margin-left: 0; /* Hilangkan margin kiri */
     }
 
-    .work-method2-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-        max-width: 100%;
+    /* Advantages and Application Section */
+    .advantages-application-container {
+        flex-direction: column; /* Mengubah layout menjadi vertikal */
+        gap: 20px; /* Jarak antara kotak */
     }
 
-    .advantage-list {
-        flex-direction: column;
+    .advantages-box,
+    .application-box {
+        width: 100%; /* Lebar penuh */
+        margin-bottom: 20px; /* Jarak antar card */
     }
+
+    .advantages-box h2,
+    .application-box h2 {
+        font-size: 24px; /* Ukuran judul lebih kecil */
+        margin-bottom: 15px; /* Jarak bawah judul */
+    }
+
     .advantage-item {
-        width: 100%;
+        margin-bottom: 15px; /* Jarak antar item */
     }
 
-    .application-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card {
-        width: 90%;
+    .application-card {
+        margin-bottom: 15px; /* Jarak antar card */
     }
 }
 
