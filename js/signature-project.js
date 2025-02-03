@@ -34,7 +34,7 @@ const projects = [
     },
     {
         title: "Sky House Alam Sutera+ Phase 2 Project",
-        images: ["assets/page1.jpg", "assets/page2.jpg", "assets/page3.jpg"],
+        images: ["assets/signature-alamsutra2-1.jpg", "assets/signature-alamsutra2-2.jpg", "assets/page3.jpg"],
         longDesc: "The Sky House Alam Sutera+ Phase 2 project is the largest contract-value building project ever undertaken by PT. Aneka Jaringan Indonesia. The foundation work for this project involved three different diameters and a large number of points. To address these challenges, PT. AJI utilized four drilling machines simultaneously, ensuring efficiency and speed in completing a strong and stable foundation. This approach supported the smooth construction of this magnificent building, showcasing PT. Aneka Jaringan Indonesia's capability in handling large-scale and complex projects.",
         info: {
             client: "PT. Risland Sutera Property",
