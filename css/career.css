@@ -276,7 +276,7 @@
 }
 
 #slider {
-    height: 35vw;
+    height: 35vw; /* Tinggi default untuk desktop */
     width: 100%;
     position: relative;
     perspective: 1000px;
@@ -293,7 +293,8 @@
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
-    background-repeat: no-repeat;
+    background-size: cover; /* Gambar menutupi area tanpa crop */
+    background-position: center; /* Gambar diatur ke tengah */
 }
 
 #s1:checked ~ #slide4, #s2:checked ~ #slide5,
