@@ -359,7 +359,7 @@
   display: flex;
   justify-content: center; /* Tengahkan secara horizontal */
   align-items: center; /* Tengahkan secara vertikal */
-  gap: 50px; /* Jarak antar sertifikat */
+  gap: 30px; /* Jarak antar sertifikat */
 }
 
 /* Tombol Carousel */
